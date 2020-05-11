@@ -15,9 +15,9 @@ end
 function onTrigger(player,npc)
     if player:hasKeyItem(tpz.ki.REMNANTS_PERMIT) then
         local mask = -2
-        if player:getMainLvl() >= 96 then
+--[[        if player:getMainLvl() >= 96 then
             mask = -14
-        elseif player:getMainLvl() >= 65 then
+        else]]if player:getMainLvl() >= 65 then
             mask = -6
         end
 
@@ -28,6 +28,7 @@ function onTrigger(player,npc)
 end
 
 function onEventUpdate(player,csid,option,target)
+    -- 9 = arrapago, 54 = base salvage number
     local instanceid = bit.rshift(option, 19) + 70
 
     local party = player:getParty()
@@ -61,7 +62,7 @@ function onEventFinish(player,csid,option,target)
 end
 
 function onInstanceCreated(player,target,instance)
-    if instance then
+    if (instance) then
         player:setInstance(instance)
         player:instanceEntry(target,4)
         player:delKeyItem(tpz.ki.REMNANTS_PERMIT)

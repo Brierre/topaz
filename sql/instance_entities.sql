@@ -652,6 +652,185 @@ INSERT INTO `instance_entities` VALUES (65,17080586);
 INSERT INTO `instance_entities` VALUES (65,17080596);
 INSERT INTO `instance_entities` VALUES (65,17080597);
 
+-- Silver Sea Remnants
+-- mobs
+INSERT INTO `instance_entities` VALUES  (71,17088513); 
+INSERT INTO `instance_entities` VALUES  (71,17088514); 
+INSERT INTO `instance_entities` VALUES  (71,17088515); 
+INSERT INTO `instance_entities` VALUES  (71,17088516); 
+INSERT INTO `instance_entities` VALUES  (71,17088517); 
+INSERT INTO `instance_entities` VALUES  (71,17088518); 
+INSERT INTO `instance_entities` VALUES  (71,17088519); 
+INSERT INTO `instance_entities` VALUES  (71,17088520); 
+INSERT INTO `instance_entities` VALUES  (71,17088521); 
+INSERT INTO `instance_entities` VALUES  (71,17088522); 
+INSERT INTO `instance_entities` VALUES  (71,17088523); 
+INSERT INTO `instance_entities` VALUES  (71,17088524); 
+INSERT INTO `instance_entities` VALUES  (71,17088525); 
+INSERT INTO `instance_entities` VALUES  (71,17088526); 
+INSERT INTO `instance_entities` VALUES  (71,17088527); 
+INSERT INTO `instance_entities` VALUES  (71,17088528); 
+INSERT INTO `instance_entities` VALUES  (71,17088529); 
+INSERT INTO `instance_entities` VALUES  (71,17088530); 
+INSERT INTO `instance_entities` VALUES  (71,17088531); 
+INSERT INTO `instance_entities` VALUES  (71,17088532); 
+INSERT INTO `instance_entities` VALUES  (71,17088533); 
+INSERT INTO `instance_entities` VALUES  (71,17088534); 
+INSERT INTO `instance_entities` VALUES  (71,17088535); 
+INSERT INTO `instance_entities` VALUES  (71,17088536); 
+INSERT INTO `instance_entities` VALUES  (71,17088537); 
+INSERT INTO `instance_entities` VALUES  (71,17088538); 
+INSERT INTO `instance_entities` VALUES  (71,17088539); 
+INSERT INTO `instance_entities` VALUES  (71,17088540); 
+INSERT INTO `instance_entities` VALUES  (71,17088541); 
+INSERT INTO `instance_entities` VALUES  (71,17088542); 
+INSERT INTO `instance_entities` VALUES  (71,17088543);  
+INSERT INTO `instance_entities` VALUES  (71,17088544); 
+INSERT INTO `instance_entities` VALUES  (71,17088545); 
+INSERT INTO `instance_entities` VALUES  (71,17088546); 
+INSERT INTO `instance_entities` VALUES  (71,17088547); 
+INSERT INTO `instance_entities` VALUES  (71,17088548); 
+INSERT INTO `instance_entities` VALUES  (71,17088549); 
+INSERT INTO `instance_entities` VALUES  (71,17088550); 
+INSERT INTO `instance_entities` VALUES  (71,17088551); 
+INSERT INTO `instance_entities` VALUES  (71,17088552); 
+INSERT INTO `instance_entities` VALUES  (71,17088553); 
+INSERT INTO `instance_entities` VALUES  (71,17088554); 
+INSERT INTO `instance_entities` VALUES  (71,17088555); 
+INSERT INTO `instance_entities` VALUES  (71,17088556); 
+INSERT INTO `instance_entities` VALUES  (71,17088557); 
+INSERT INTO `instance_entities` VALUES  (71,17088558); 
+INSERT INTO `instance_entities` VALUES  (71,17088559); 
+INSERT INTO `instance_entities` VALUES  (71,17088560); 
+INSERT INTO `instance_entities` VALUES  (71,17088561); 
+INSERT INTO `instance_entities` VALUES  (71,17088562); 
+INSERT INTO `instance_entities` VALUES  (71,17088563); 
+INSERT INTO `instance_entities` VALUES  (71,17088564); 
+INSERT INTO `instance_entities` VALUES  (71,17088565); 
+INSERT INTO `instance_entities` VALUES  (71,17088566); 
+INSERT INTO `instance_entities` VALUES  (71,17088567); 
+INSERT INTO `instance_entities` VALUES  (71,17088568); 
+INSERT INTO `instance_entities` VALUES  (71,17088569); 
+INSERT INTO `instance_entities` VALUES  (71,17088570); 
+INSERT INTO `instance_entities` VALUES  (71,17088571); 
+INSERT INTO `instance_entities` VALUES  (71,17088572); 
+INSERT INTO `instance_entities` VALUES  (71,17088573); 
+INSERT INTO `instance_entities` VALUES  (71,17088574); 
+INSERT INTO `instance_entities` VALUES  (71,17088575); 
+INSERT INTO `instance_entities` VALUES  (71,17088576); 
+INSERT INTO `instance_entities` VALUES  (71,17088577); 
+INSERT INTO `instance_entities` VALUES  (71,17088578); 
+INSERT INTO `instance_entities` VALUES  (71,17088579); 
+INSERT INTO `instance_entities` VALUES  (71,17088580); 
+INSERT INTO `instance_entities` VALUES  (71,17088581); 
+INSERT INTO `instance_entities` VALUES  (71,17088582); 
+INSERT INTO `instance_entities` VALUES  (71,17088583); 
+INSERT INTO `instance_entities` VALUES  (71,17088584); 
+INSERT INTO `instance_entities` VALUES  (71,17088585); 
+INSERT INTO `instance_entities` VALUES  (71,17088586); 
+INSERT INTO `instance_entities` VALUES  (71,17088587); 
+INSERT INTO `instance_entities` VALUES  (71,17088588); 
+INSERT INTO `instance_entities` VALUES  (71,17088589); 
+INSERT INTO `instance_entities` VALUES  (71,17088590); 
+INSERT INTO `instance_entities` VALUES  (71,17088591); 
+INSERT INTO `instance_entities` VALUES  (71,17088592); 
+INSERT INTO `instance_entities` VALUES  (71,17088593); 
+INSERT INTO `instance_entities` VALUES  (71,17088594); 
+INSERT INTO `instance_entities` VALUES  (71,17088595); 
+INSERT INTO `instance_entities` VALUES  (71,17088596); 
+INSERT INTO `instance_entities` VALUES  (71,17088597); 
+INSERT INTO `instance_entities` VALUES  (71,17088598); 
+INSERT INTO `instance_entities` VALUES  (71,17088599); 
+INSERT INTO `instance_entities` VALUES  (71,17088600); 
+INSERT INTO `instance_entities` VALUES  (71,17088601); 
+INSERT INTO `instance_entities` VALUES  (71,17088602); 
+INSERT INTO `instance_entities` VALUES  (71,17088603); 
+INSERT INTO `instance_entities` VALUES  (71,17088604); 
+INSERT INTO `instance_entities` VALUES  (71,17088605); 
+INSERT INTO `instance_entities` VALUES  (71,17088606); 
+INSERT INTO `instance_entities` VALUES  (71,17088607); 
+INSERT INTO `instance_entities` VALUES  (71,17088608); 
+INSERT INTO `instance_entities` VALUES  (71,17088609); 
+INSERT INTO `instance_entities` VALUES  (71,17088610); 
+INSERT INTO `instance_entities` VALUES  (71,17088611); 
+INSERT INTO `instance_entities` VALUES  (71,17088612); 
+INSERT INTO `instance_entities` VALUES  (71,17088613); 
+INSERT INTO `instance_entities` VALUES  (71,17088614); 
+INSERT INTO `instance_entities` VALUES  (71,17088615); 
+INSERT INTO `instance_entities` VALUES  (71,17088616); 
+INSERT INTO `instance_entities` VALUES  (71,17088617); 
+INSERT INTO `instance_entities` VALUES  (71,17088618); 
+INSERT INTO `instance_entities` VALUES  (71,17088619); 
+INSERT INTO `instance_entities` VALUES  (71,17088620); 
+INSERT INTO `instance_entities` VALUES  (71,17088621); 
+INSERT INTO `instance_entities` VALUES  (71,17088622); 
+INSERT INTO `instance_entities` VALUES  (71,17088623); 
+INSERT INTO `instance_entities` VALUES  (71,17088624); 
+INSERT INTO `instance_entities` VALUES  (71,17088625); 
+INSERT INTO `instance_entities` VALUES  (71,17088626); 
+INSERT INTO `instance_entities` VALUES  (71,17088627); 
+INSERT INTO `instance_entities` VALUES  (71,17088628); 
+INSERT INTO `instance_entities` VALUES  (71,17088629); 
+INSERT INTO `instance_entities` VALUES  (71,17088630); 
+INSERT INTO `instance_entities` VALUES  (71,17088631); 
+INSERT INTO `instance_entities` VALUES  (71,17088632); 
+INSERT INTO `instance_entities` VALUES  (71,17088633); 
+INSERT INTO `instance_entities` VALUES  (71,17088634); 
+INSERT INTO `instance_entities` VALUES  (71,17088635); 
+INSERT INTO `instance_entities` VALUES  (71,17088636); 
+INSERT INTO `instance_entities` VALUES  (71,17088637);
+
+-- npcs
+
+INSERT INTO `instance_entities` VALUES  (71,17088809); -- first armoury crate, not sure why the comment but "Armoury crates seems to move and be reused in other parts (once you choose way ?)"
+
+INSERT INTO `instance_entities` VALUES  (71,17089376); -- Moogle
+INSERT INTO `instance_entities` VALUES  (71,17089377);
+INSERT INTO `instance_entities` VALUES  (71,17089378);
+INSERT INTO `instance_entities` VALUES  (71,17089379);
+INSERT INTO `instance_entities` VALUES  (71,17089380);
+INSERT INTO `instance_entities` VALUES  (71,17089381);
+INSERT INTO `instance_entities` VALUES  (71,17089382);
+INSERT INTO `instance_entities` VALUES  (71,17089383);
+INSERT INTO `instance_entities` VALUES  (71,17089384); -- Gilded Doors
+INSERT INTO `instance_entities` VALUES  (71,17089385);
+INSERT INTO `instance_entities` VALUES  (71,17089386);
+INSERT INTO `instance_entities` VALUES  (71,17089387);
+INSERT INTO `instance_entities` VALUES  (71,17089388);
+INSERT INTO `instance_entities` VALUES  (71,17089389);
+INSERT INTO `instance_entities` VALUES  (71,17089390);
+INSERT INTO `instance_entities` VALUES  (71,17089391);
+INSERT INTO `instance_entities` VALUES  (71,17089392);
+INSERT INTO `instance_entities` VALUES  (71,17089393);
+INSERT INTO `instance_entities` VALUES  (71,17089394);
+INSERT INTO `instance_entities` VALUES  (71,17089395);
+INSERT INTO `instance_entities` VALUES  (71,17089396);
+INSERT INTO `instance_entities` VALUES  (71,17089397);
+INSERT INTO `instance_entities` VALUES  (71,17089398);
+INSERT INTO `instance_entities` VALUES  (71,17089399);
+INSERT INTO `instance_entities` VALUES  (71,17089400);
+INSERT INTO `instance_entities` VALUES  (71,17089401);
+INSERT INTO `instance_entities` VALUES  (71,17089402);
+INSERT INTO `instance_entities` VALUES  (71,17089403);
+INSERT INTO `instance_entities` VALUES  (71,17089404);
+INSERT INTO `instance_entities` VALUES  (71,17089405);
+INSERT INTO `instance_entities` VALUES  (71,17089406);
+INSERT INTO `instance_entities` VALUES  (71,17089407);
+INSERT INTO `instance_entities` VALUES  (71,17089408);
+INSERT INTO `instance_entities` VALUES  (71,17089409);
+INSERT INTO `instance_entities` VALUES  (71,17089410);
+INSERT INTO `instance_entities` VALUES  (71,17089411);
+INSERT INTO `instance_entities` VALUES  (71,17089412);
+INSERT INTO `instance_entities` VALUES  (71,17089413);
+INSERT INTO `instance_entities` VALUES  (71,17089414);
+INSERT INTO `instance_entities` VALUES  (71,17089415);
+INSERT INTO `instance_entities` VALUES  (71,17089416); -- Gilded Doors
+INSERT INTO `instance_entities` VALUES  (71,17089417); -- _24w
+INSERT INTO `instance_entities` VALUES  (71,17089418); -- Gilded Gateway
+INSERT INTO `instance_entities` VALUES  (71,17089419); -- Weather
+INSERT INTO `instance_entities` VALUES  (71,17089420); -- ? not captured 
+INSERT INTO `instance_entities` VALUES  (71,17089421); -- NPC[389]
+
 -- Shades of Vengeance
 INSERT INTO `instance_entities` VALUES (79,17006754);
 INSERT INTO `instance_entities` VALUES (79,17006755);
