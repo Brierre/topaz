@@ -19,10 +19,10 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
         NOT_HAVE_ENOUGH_GIL        = 6393, -- You do not have enough gil.
         ITEMS_OBTAINED             = 6397, -- You obtain <number> <item>!
         SALVAGE_START              = 7235, -- You feel an incredible pressure bearing down on you. This area appears to be blanketed in some sort of intense psionic field...
-        TIME_TO_COMPLETE           = 7442, -- You have <number> [minute/minutes] (Earth time) to complete this mission.
-        MISSION_FAILED             = 7443, -- The mission has failed. Leaving area.
-        TIME_REMAINING_MINUTES     = 7447, -- Time remaining: <number> [minute/minutes] (Earth time).
-        TIME_REMAINING_SECONDS     = 7448, -- Time remaining: <number> [second/seconds] (Earth time).
+        TIME_TO_COMPLETE           = 7407, -- You have <number> [minute/minutes] (Earth time) to complete this mission.
+        MISSION_FAILED             = 7408, -- The mission has failed. Leaving area.
+        TIME_REMAINING_MINUTES     = 7412, -- Time remaining: <number> [minute/minutes] (Earth time).
+        TIME_REMAINING_SECONDS     = 7413, -- Time remaining: <number> [second/seconds] (Earth time).
 		CELL_OFFSET                = 7212, -- Main Weapon/Sub-Weapon restriction removed.
     },
     mob =
