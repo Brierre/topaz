@@ -3,7 +3,7 @@
 -- Zone: Silver Sea Remnants
 -----------------------------------
 
-require("scripts/globals/pathfind");
+require("scripts/globals/pathfind")
 
 local path =
 {
@@ -16,14 +16,14 @@ local path =
     -233,-4,79,
     -244,-4,71,
     -255,-4,69,
-};
+}
 
 -----------------------------------
 -- onMobSpawn Action
 -----------------------------------
 
 function onMobSpawn(mob)
-        onMobRoam(mob);
+        onMobRoam(mob)
 end;
 
 
@@ -32,8 +32,8 @@ end;
 -----------------------------------
 
 function onPath(mob)
-    pathfind.patrol(mob, path, PATHFLAG_RUN);
-end;
+    pathfind.patrol(mob, path, PATHFLAG_RUN)
+end
 
 -----------------------------------
 -- onMobRoam Action
@@ -41,6 +41,6 @@ end;
 
 function onMobRoam(mob)
     if (mob:isFollowingPath() == false) then
-        mob:pathThrough(pathfind.random(path), PATHFLAG_RUN);
+        mob:pathThrough(pathfind.random(path), PATHFLAG_RUN)
     end
-end;
+end

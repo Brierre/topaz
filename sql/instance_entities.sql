@@ -781,8 +781,44 @@ INSERT INTO `instance_entities` VALUES  (71,17088636);
 INSERT INTO `instance_entities` VALUES  (71,17088637);
 
 -- npcs
-
-INSERT INTO `instance_entities` VALUES  (71,17088809); -- first armoury crate, not sure why the comment but "Armoury crates seems to move and be reused in other parts (once you choose way ?)"
+-- first armoury crate, not sure why the comment but "Armoury crates seems to move and be reused in other parts (once you choose way ?)"
+INSERT INTO `instance_entities` VALUES  (71,17088787);
+INSERT INTO `instance_entities` VALUES  (71,17088788);
+INSERT INTO `instance_entities` VALUES  (71,17088789);
+INSERT INTO `instance_entities` VALUES  (71,17088790);
+INSERT INTO `instance_entities` VALUES  (71,17088791);
+INSERT INTO `instance_entities` VALUES  (71,17088792);
+INSERT INTO `instance_entities` VALUES  (71,17088793);
+INSERT INTO `instance_entities` VALUES  (71,17088794);
+INSERT INTO `instance_entities` VALUES  (71,17088795);
+INSERT INTO `instance_entities` VALUES  (71,17088796);
+INSERT INTO `instance_entities` VALUES  (71,17088797);
+INSERT INTO `instance_entities` VALUES  (71,17088798);
+INSERT INTO `instance_entities` VALUES  (71,17088799);
+INSERT INTO `instance_entities` VALUES  (71,17088800);
+INSERT INTO `instance_entities` VALUES  (71,17088801);
+INSERT INTO `instance_entities` VALUES  (71,17088802);
+INSERT INTO `instance_entities` VALUES  (71,17088803);
+INSERT INTO `instance_entities` VALUES  (71,17088804);
+INSERT INTO `instance_entities` VALUES  (71,17088805);
+INSERT INTO `instance_entities` VALUES  (71,17088806);
+INSERT INTO `instance_entities` VALUES  (71,17088807);
+INSERT INTO `instance_entities` VALUES  (71,17088808);
+INSERT INTO `instance_entities` VALUES  (71,17088809);
+INSERT INTO `instance_entities` VALUES  (71,17088810);
+INSERT INTO `instance_entities` VALUES  (71,17088811);
+INSERT INTO `instance_entities` VALUES  (71,17088812);
+INSERT INTO `instance_entities` VALUES  (71,17088813);
+INSERT INTO `instance_entities` VALUES  (71,17088814);
+INSERT INTO `instance_entities` VALUES  (71,17088815);
+INSERT INTO `instance_entities` VALUES  (71,17088816);
+INSERT INTO `instance_entities` VALUES  (71,17088817);
+INSERT INTO `instance_entities` VALUES  (71,17088818);
+INSERT INTO `instance_entities` VALUES  (71,17088819);
+INSERT INTO `instance_entities` VALUES  (71,17088820);
+INSERT INTO `instance_entities` VALUES  (71,17088821);
+INSERT INTO `instance_entities` VALUES  (71,17088822);
+INSERT INTO `instance_entities` VALUES  (71,17088823);
 
 INSERT INTO `instance_entities` VALUES  (71,17089376); -- Moogle
 INSERT INTO `instance_entities` VALUES  (71,17089377);

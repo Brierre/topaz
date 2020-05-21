@@ -1,13 +1,13 @@
 -----------------------------------
 -- Area: Silver Sea Remnants
--- Door: Gilded Doors Floor 2 SW porter
--- @pos 260 2 360
+-- Door: Gilded Doors Floor 2 east hallway
+-- @pos 400 -6 420
 -----------------------------------
 local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
 require("scripts/globals/status")
 
 function onTrigger(entity, npc)
-    if (npc:getInstance():getStage() == 2) and (npc:getInstance():getProgress() == 3) then
+    if (npc:getInstance():getStage() == 2) and (npc:getInstance():getProgress() == 6) then
         entity:startEvent(300)
     else
         entity:messageSpecial(ID.text.DOOR_IS_SEALED)

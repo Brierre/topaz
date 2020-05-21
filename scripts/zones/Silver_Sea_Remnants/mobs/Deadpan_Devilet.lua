@@ -1,21 +1,17 @@
 -----------------------------------
 -- Area: Silver Sea Remnants
---  MOB: Hammerblow Majanun
+--  MOB: Deadpan Devilet
 -----------------------------------
+local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
 require("scripts/globals/status")
 require("scripts/globals/settings")
------------------------------------
--- onMobSpawn Action
------------------------------------
 
 function onMobSpawn(mob)
 
 end
 
------------------------------------
--- onMobDeath
------------------------------------
-
 function onMobDeath(mob, player, isKiller)
-
+    local instance = mob:getInstance()
+    instance:setProgress(5) -- set progress when mob dies
+    SpawnMob(ID.mob[2][2].DEKKA, instance)
 end

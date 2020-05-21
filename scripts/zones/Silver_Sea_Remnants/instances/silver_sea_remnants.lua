@@ -23,12 +23,12 @@ end
 
 function onInstanceCreated(instance)
 
---[[    for i,v in pairs(ID.npc[1][1]) do
+    for i,v in pairs(ID.npc[1][1]) do
         local npc = instance:getEntity(bit.band(v, 0xFFF), tpz.objType.NPC)
         npc:setStatus(tpz.status.NORMAL)
     end
     instance:setStage(1)
-    instance:setProgress(0)]]
+    instance:setProgress(0)
 end
 
 function onInstanceTimeUpdate(instance, elapsed)

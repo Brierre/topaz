@@ -23,6 +23,7 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
         MISSION_FAILED             = 7408, -- The mission has failed. Leaving area.
         TIME_REMAINING_MINUTES     = 7412, -- Time remaining: <number> [minute/minutes] (Earth time).
         TIME_REMAINING_SECONDS     = 7413, -- Time remaining: <number> [second/seconds] (Earth time).
+        DOOR_IS_SEALED             = 7426, -- The door is sealed.
 		CELL_OFFSET                = 7212, -- Main Weapon/Sub-Weapon restriction removed.
     },
     mob =
@@ -41,7 +42,7 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
                 MOBS_END   = 17088550,
             },
             [4] = {
-                MOBS_START = 17088551, -- west x6 fomor always link, killing all makes door [1][4] targetable, spawns [1][5]
+                MOBS_START = 17088551, -- west x6 fomor always link, killing all makes door [1][4] open, spawns [1][5]
                 MOBS_END   = 17088556,
             },
             [5] = {
@@ -54,7 +55,7 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
         },
         [2] = {
             [1] = {
-                DEADPAN_DEVILET    = 17088594, --nw room, spawn by NPC [2][1] 9399, unlocks NPC [2][1] 9400, spawns [2][2] DEKKA on kill
+                DEADPAN_DEVILET    = 17088594, --nw room, spawn by NPC [2][1] 9399, unlocks door [2][1] 9400, spawns [2][2] DEKKA on kill
             },
             [2] = {
                 DEKKA      = 17088595,
@@ -64,21 +65,22 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
             },
             [4] = {
                 MOBS_START = 17088574, -- sw room,x4 imp, spawn by NPC [2][1] 9397
-                                       -- sw room, x16 fomor
-                MOBS_END   = 17088593,
+                MOBS_END   = 17088593, -- sw room, x16 fomor
             },
             [5] = {
                 MOBS_START = 17088597, -- se room, x4 imp spawn by NPC [2][1] 9404
-                                       -- se room, x16 fomor
-                MOBS_END   = 17088616, -- kill imps for door [2][1] 9405, kill fomors for [2][6] POWDERKEG_YANADAHN
+                MOBS_END   = 17088600, -- kill imps for door [2][1] 9405
             },
             [6] = {
-                POWDERKEG_YANADAHN = 17088617,
+                MOBS_START = 17088601, -- se room, x16 fomor 
+                MOBS_END   = 17088616, -- kill fomors for [2][7] POWDERKEG_YANADAHN
             },
             [7] = {
+                POWDERKEG_YANADAHN = 17088617,
+            },
+            [8] = {
                 MOBS_START = 17088618, -- ne room, x4 imp spawn by NPC [2][1] 9402
-                                       -- ne room, x16 fomor
-                MOBS_END   = 17088637,
+                MOBS_END   = 17088637, -- ne room, x16 fomor
             },
         },
         [3] = {
@@ -104,8 +106,8 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
                 MOBS_END   = 17088657,
             },
             [7] = {
-                MOBS_START = 17088638, -- archaic rampart x4 plus reinforcement garm, haunt, doom mage, guard skeleton
-                MOBS_END   = 17088652, -- will need to add 8640,8651,8653 (presumably garm, haunt,doom mage, )
+                MOBS_START = 17088638, -- archaic rampart x4
+                MOBS_END   = 17088653, -- reinforcements, scripted spawn
             },
             [8] = {
                 MOBS_START = 17088685, -- archaic gear x4
@@ -116,22 +118,26 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
                 MOBS_END   = 17088692,
             },
             [10] = {
-                MOBS_START = 17088669, -- archaic rampart x4 plus reinforcement garm, haunt, doom mage, guard skeleton
-                MOBS_END   = 17088684, -- will need to add 8671,8675,8679 (presumably garm x3)
+                MOBS_START = 17088669, -- archaic rampart x4
+                MOBS_END   = 17088684, -- reinforcements scripted spawn
             },
             [11] = {
-                MOBS_START = 17088693, -- archaic rampart x4, only one needs killed to unlock door
-                MOBS_END   = 17088708, -- will need to add reinforcements to list/db, none are currently in mob list
+                MOBS_START = 17088693, -- archaic rampart x3
+                MOBS_END   = 17088704, -- reinforcements scripted spawn
             },
             [12] = {
+                MOBS_START = 17088705, -- archaic rampart x1
+                MOBS_END   = 17088708, -- reinforcements scripted spawn
+            },
+            [13] = {
                 MOBS_START = 17088709, -- archaic gear x4
                 MOBS_END   = 17088712,
             },
-            [13] = {
+            [14] = {
                 MOBS_START = 17088713, -- archaic gears x4
                 MOBS_END   = 17088716,
             },
-            [14] = {
+            [15] = {
                 GYROSCOPIC_GEARS = 17088717, -- gyroscopic gears nm
             },
         },
@@ -182,7 +188,7 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
                 DOOR3 = 17089389, -- _244 west unlocked, targetable, spawns [1][4]
             },
             [4] = {
-                DOOR4 = 17089390, -- _245 west, locked, untargetable until 6 fomors in room are killed, spawns [1][6]
+                DOOR1 = 17089390, -- _245 west, locked, untargetable until 6 fomors in room are killed, spawns [1][6]
             },
             [5] = {
                 DOOR1 = 17089387, -- _242 east side door, targetable, lock [1][3] when chosen, spawns [1][1]
@@ -199,10 +205,10 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
             [1] = { -- these doors need to all lock when one of the following is chosen (DOOR1-DOOR4)
                 DOOR1 = 17089397,  -- _24a (misnamed in file, should be _24c) SW spawns [2][4]
                 DOOR2 = 17089399,  -- _24e NW spawns [2][1] and NPC [2][3]
-                DOOR3 = 17089402,  -- _24h NE room spawns [2][7]
+                DOOR3 = 17089402,  -- _24h NE room spawns [2][8]
                 DOOR4 = 17089404,  -- _24j SE spawns [2][5]
-                DOOR5 = 17089398,  -- _24d west
-                DOOR6 = 17089403,  -- _24i east
+--                DOOR5 = 17089398,  -- _24d west
+--                DOOR6 = 17089403,  -- _24i east
             },
             [2] = {
                 DOOR = 17089400,  -- _24f NW porter

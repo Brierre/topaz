@@ -43,7 +43,7 @@ function onZoneIn(player,prevZone)
         if prevZone == tpz.zone.ARRAPAGO_REMNANTS then
             player:setPos(-579, 0.05, -100, 192)
         elseif prevZone == tpz.zone.SILVER_SEA_REMNANTS then
-            player:setPos(-580, 0.05, 500, 192)
+            player:setPos(580, 0.05, 500, 320)
         else
             player:setPos(222.798, -0.5, 19.872, 0)
         end
