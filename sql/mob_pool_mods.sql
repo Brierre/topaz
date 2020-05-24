@@ -213,9 +213,8 @@ INSERT INTO `mob_pool_mods` VALUES (5408,58,40,1); -- Maat (PLD) SPECIAL_DELAY: 
 INSERT INTO `mob_pool_mods` VALUES (5409,30,1036,1); -- Maat (DRK) SPECIAL_SKILL: maats_bash
 INSERT INTO `mob_pool_mods` VALUES (5409,33,50,1); -- Maat (DRK) SPECIAL_COOLDOWN: 50 sec
 INSERT INTO `mob_pool_mods` VALUES (5409,58,40,1); -- Maat (DRK) SPECIAL_DELAY: 40 sec
-INSERT INTO `mob_pool_mods` VALUES (6172,169,-67,0); -- Archaic Gear Train  (Silver Sea Remnants): Movement speed
-INSERT INTO `mob_pool_mods` VALUES (6173,169,-67,0); -- Archaic Gears Train (Silver Sea Remnants): Movement speed
-
+INSERT INTO `mob_pool_mods` VALUES (6172,169,-67,0); -- Archaic Gear Train  (Silver Sea Remnants): Movement speed down for patrolling gear(s)
+INSERT INTO `mob_pool_mods` VALUES (6181,169,-25,0); -- Archaic Gears Train (SSR, adding a random pathing to these mobs in center room)
 /*!40000 ALTER TABLE `mob_pool_mods` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

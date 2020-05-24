@@ -779,6 +779,155 @@ INSERT INTO `instance_entities` VALUES  (71,17088634);
 INSERT INTO `instance_entities` VALUES  (71,17088635); 
 INSERT INTO `instance_entities` VALUES  (71,17088636); 
 INSERT INTO `instance_entities` VALUES  (71,17088637);
+INSERT INTO `instance_entities` VALUES  (71,17088638); -- FL 3 Ramparts/Reinforcement Garm, Haunt, Doom Mage, Guard Skeleton
+INSERT INTO `instance_entities` VALUES  (71,17088639);
+INSERT INTO `instance_entities` VALUES  (71,17088640);
+INSERT INTO `instance_entities` VALUES  (71,17088641);
+INSERT INTO `instance_entities` VALUES  (71,17088642);
+INSERT INTO `instance_entities` VALUES  (71,17088643);
+INSERT INTO `instance_entities` VALUES  (71,17088644);
+INSERT INTO `instance_entities` VALUES  (71,17088645);
+INSERT INTO `instance_entities` VALUES  (71,17088646);
+INSERT INTO `instance_entities` VALUES  (71,17088647);
+INSERT INTO `instance_entities` VALUES  (71,17088648);
+INSERT INTO `instance_entities` VALUES  (71,17088649);
+INSERT INTO `instance_entities` VALUES  (71,17088650);
+INSERT INTO `instance_entities` VALUES  (71,17088651);
+INSERT INTO `instance_entities` VALUES  (71,17088652);
+INSERT INTO `instance_entities` VALUES  (71,17088653);
+INSERT INTO `instance_entities` VALUES  (71,17088654); -- Archaic Gear
+INSERT INTO `instance_entities` VALUES  (71,17088655);
+INSERT INTO `instance_entities` VALUES  (71,17088656); -- Archaic Gears
+INSERT INTO `instance_entities` VALUES  (71,17088657);
+INSERT INTO `instance_entities` VALUES  (71,17088658); -- Devilet NM
+INSERT INTO `instance_entities` VALUES  (71,17088659); -- Archaic Gear
+INSERT INTO `instance_entities` VALUES  (71,17088660);
+INSERT INTO `instance_entities` VALUES  (71,17088661);
+INSERT INTO `instance_entities` VALUES  (71,17088662);
+INSERT INTO `instance_entities` VALUES  (71,17088663);
+INSERT INTO `instance_entities` VALUES  (71,17088664);
+INSERT INTO `instance_entities` VALUES  (71,17088665);
+INSERT INTO `instance_entities` VALUES  (71,17088666);
+INSERT INTO `instance_entities` VALUES  (71,17088667); -- Gyroscopic Gear
+INSERT INTO `instance_entities` VALUES  (71,17088668); -- ?
+INSERT INTO `instance_entities` VALUES  (71,17088669); -- Ramparts/Reinforcement Garm, Haunt, Doom Mage, Guard Skeleton
+INSERT INTO `instance_entities` VALUES  (71,17088670); 
+INSERT INTO `instance_entities` VALUES  (71,17088671);
+INSERT INTO `instance_entities` VALUES  (71,17088672);
+INSERT INTO `instance_entities` VALUES  (71,17088673);
+INSERT INTO `instance_entities` VALUES  (71,17088674);
+INSERT INTO `instance_entities` VALUES  (71,17088675);
+INSERT INTO `instance_entities` VALUES  (71,17088676);
+INSERT INTO `instance_entities` VALUES  (71,17088677);
+INSERT INTO `instance_entities` VALUES  (71,17088678);
+INSERT INTO `instance_entities` VALUES  (71,17088679);
+INSERT INTO `instance_entities` VALUES  (71,17088680);
+INSERT INTO `instance_entities` VALUES  (71,17088681);
+INSERT INTO `instance_entities` VALUES  (71,17088682);
+INSERT INTO `instance_entities` VALUES  (71,17088683);
+INSERT INTO `instance_entities` VALUES  (71,17088684);
+INSERT INTO `instance_entities` VALUES  (71,17088685); -- Archaic Gear
+INSERT INTO `instance_entities` VALUES  (71,17088686);
+INSERT INTO `instance_entities` VALUES  (71,17088687);
+INSERT INTO `instance_entities` VALUES  (71,17088688);
+INSERT INTO `instance_entities` VALUES  (71,17088689); -- Archaic Gears
+INSERT INTO `instance_entities` VALUES  (71,17088690);
+INSERT INTO `instance_entities` VALUES  (71,17088691);
+INSERT INTO `instance_entities` VALUES  (71,17088692);
+INSERT INTO `instance_entities` VALUES  (71,17088693); -- Ramparts/Reinforcement Garm, Haunt, Doom Mage, Guard Skeleton
+INSERT INTO `instance_entities` VALUES  (71,17088694);
+INSERT INTO `instance_entities` VALUES  (71,17088695);
+INSERT INTO `instance_entities` VALUES  (71,17088696);
+INSERT INTO `instance_entities` VALUES  (71,17088697);
+INSERT INTO `instance_entities` VALUES  (71,17088698);
+INSERT INTO `instance_entities` VALUES  (71,17088699);
+INSERT INTO `instance_entities` VALUES  (71,17088700);
+INSERT INTO `instance_entities` VALUES  (71,17088701);
+INSERT INTO `instance_entities` VALUES  (71,17088702);
+INSERT INTO `instance_entities` VALUES  (71,17088703);
+INSERT INTO `instance_entities` VALUES  (71,17088704);
+INSERT INTO `instance_entities` VALUES  (71,17088705);
+INSERT INTO `instance_entities` VALUES  (71,17088706);
+INSERT INTO `instance_entities` VALUES  (71,17088707);
+INSERT INTO `instance_entities` VALUES  (71,17088708);
+INSERT INTO `instance_entities` VALUES  (71,17088709); -- Archaic Gear
+INSERT INTO `instance_entities` VALUES  (71,17088710);
+INSERT INTO `instance_entities` VALUES  (71,17088711);
+INSERT INTO `instance_entities` VALUES  (71,17088712);
+INSERT INTO `instance_entities` VALUES  (71,17088713); -- Archaic Gears
+INSERT INTO `instance_entities` VALUES  (71,17088714);
+INSERT INTO `instance_entities` VALUES  (71,17088715);
+INSERT INTO `instance_entities` VALUES  (71,17088716);
+INSERT INTO `instance_entities` VALUES  (71,17088717); -- Gyroscopic Gears
+INSERT INTO `instance_entities` VALUES  (71,17088718); -- Archaic Gear
+INSERT INTO `instance_entities` VALUES  (71,17088719);
+INSERT INTO `instance_entities` VALUES  (71,17088720); -- Archaic Gears
+INSERT INTO `instance_entities` VALUES  (71,17088721);
+INSERT INTO `instance_entities` VALUES  (71,17088722); -- Archaic Gear
+INSERT INTO `instance_entities` VALUES  (71,17088723);
+INSERT INTO `instance_entities` VALUES  (71,17088724); -- Archaic Gears
+INSERT INTO `instance_entities` VALUES  (71,17088725);
+INSERT INTO `instance_entities` VALUES  (71,17088726); -- Archaic Chariot
+INSERT INTO `instance_entities` VALUES  (71,17088727); -- Ramparts/Reinforcement Garm, Haunt, Doom Mage, Guard Skeleton
+INSERT INTO `instance_entities` VALUES  (71,17088728);
+INSERT INTO `instance_entities` VALUES  (71,17088729);
+INSERT INTO `instance_entities` VALUES  (71,17088730);
+INSERT INTO `instance_entities` VALUES  (71,17088731);
+INSERT INTO `instance_entities` VALUES  (71,17088732);
+INSERT INTO `instance_entities` VALUES  (71,17088733);
+INSERT INTO `instance_entities` VALUES  (71,17088734);
+INSERT INTO `instance_entities` VALUES  (71,17088735);
+INSERT INTO `instance_entities` VALUES  (71,17088736);
+INSERT INTO `instance_entities` VALUES  (71,17088737);
+INSERT INTO `instance_entities` VALUES  (71,17088738);
+INSERT INTO `instance_entities` VALUES  (71,17088739);
+INSERT INTO `instance_entities` VALUES  (71,17088740);
+INSERT INTO `instance_entities` VALUES  (71,17088741);
+INSERT INTO `instance_entities` VALUES  (71,17088742);
+INSERT INTO `instance_entities` VALUES  (71,17088743); -- Archaic Gear
+INSERT INTO `instance_entities` VALUES  (71,17088744);
+INSERT INTO `instance_entities` VALUES  (71,17088745); -- Archaic Gears
+INSERT INTO `instance_entities` VALUES  (71,17088746);
+INSERT INTO `instance_entities` VALUES  (71,17088747); -- Archaic Gear
+INSERT INTO `instance_entities` VALUES  (71,17088748);
+INSERT INTO `instance_entities` VALUES  (71,17088749); -- Archaic Gears
+INSERT INTO `instance_entities` VALUES  (71,17088750);
+INSERT INTO `instance_entities` VALUES  (71,17088751); -- Archaic Gear
+INSERT INTO `instance_entities` VALUES  (71,17088752);
+INSERT INTO `instance_entities` VALUES  (71,17088753);
+INSERT INTO `instance_entities` VALUES  (71,17088754);
+INSERT INTO `instance_entities` VALUES  (71,17088755);
+INSERT INTO `instance_entities` VALUES  (71,17088756);
+INSERT INTO `instance_entities` VALUES  (71,17088757); -- Archaic Gears
+INSERT INTO `instance_entities` VALUES  (71,17088758);
+INSERT INTO `instance_entities` VALUES  (71,17088759);
+INSERT INTO `instance_entities` VALUES  (71,17088760);
+INSERT INTO `instance_entities` VALUES  (71,17088761);
+INSERT INTO `instance_entities` VALUES  (71,17088762);
+INSERT INTO `instance_entities` VALUES  (71,17088763);
+INSERT INTO `instance_entities` VALUES  (71,17088764);
+INSERT INTO `instance_entities` VALUES  (71,17088765);
+INSERT INTO `instance_entities` VALUES  (71,17088766);
+INSERT INTO `instance_entities` VALUES  (71,17088767); -- Archaic Chariot
+INSERT INTO `instance_entities` VALUES  (71,17088768); -- Ramparts/Reinforcement Garm, Haunt, Doom Mage, Guard Skeleton
+INSERT INTO `instance_entities` VALUES  (71,17088769);
+INSERT INTO `instance_entities` VALUES  (71,17088770);
+INSERT INTO `instance_entities` VALUES  (71,17088771);
+INSERT INTO `instance_entities` VALUES  (71,17088772);
+INSERT INTO `instance_entities` VALUES  (71,17088773);
+INSERT INTO `instance_entities` VALUES  (71,17088774);
+INSERT INTO `instance_entities` VALUES  (71,17088775);
+INSERT INTO `instance_entities` VALUES  (71,17088776);
+INSERT INTO `instance_entities` VALUES  (71,17088777);
+INSERT INTO `instance_entities` VALUES  (71,17088778);
+INSERT INTO `instance_entities` VALUES  (71,17088779);
+INSERT INTO `instance_entities` VALUES  (71,17088780);
+INSERT INTO `instance_entities` VALUES  (71,17088781); 
+INSERT INTO `instance_entities` VALUES  (71,17088782);
+INSERT INTO `instance_entities` VALUES  (71,17088783);
+INSERT INTO `instance_entities` VALUES  (71,17088784); -- Archaic Rampart (last)
+INSERT INTO `instance_entities` VALUES  (71,17088785); -- Citadel Chelonian
+INSERT INTO `instance_entities` VALUES  (71,17088786); -- Long-Armed Chariot
 
 -- npcs
 -- first armoury crate, not sure why the comment but "Armoury crates seems to move and be reused in other parts (once you choose way ?)"

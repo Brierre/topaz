@@ -5,6 +5,7 @@
 -----------------------------------
 local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
 require("scripts/globals/instance")
+require("scripts/globals/status")
 -----------------------------------
 
 function afterInstanceRegister(player)
@@ -55,89 +56,83 @@ function onRegionEnter(player, region, instance)
 end
 
 function onInstanceProgressUpdate(instance, progress, elapsed)
---[[    if instance:getStage() == 1 and progress == 10 then
-        SpawnMob(ID.mob[1][2].rampart, instance)
-    elseif instance:getStage() == 2 and progress == 2 then -- attempt to spawn slot
-        instance:getEntity(bit.band(ID.npc[2][2].SLOT, 0xFFF), tpz.objType.NPC):setStatus(tpz.status.NORMAL)
-    elseif instance:getStage() == 2 and progress == 3 then -- attempt to spawn socket
-        instance:getEntity(bit.band(ID.npc[2][2].SOCKET, 0xFFF), tpz.objType.NPC):setStatus(tpz.status.NORMAL)
-    elseif instance:getStage() == 3 and progress == 1 then
-        SpawnMob(ID.mob[2][0].astrologer, instance)
-    elseif instance:getStage() == 6 and progress == 1 then
-        instance:getEntity(bit.band(ID.npc[6].DOOR, 0xFFF), tpz.objType.NPC):setLocalVar("start",os.time())
-    elseif instance:getStage() == 7 and progress == 0 then
-        local door = instance:getEntity(bit.band(ID.npc[6].DOOR, 0xFFF), tpz.objType.NPC)
-        door:setLocalVar("current",os.time())
-        if (door:getLocalVar("current") - door:getLocalVar("start") <= 420) then
-            SpawnMob(ID.mob[6].treasure_hunter1, instance)
-            SpawnMob(ID.mob[6].treasure_hunter2, instance)
-            SpawnMob(ID.mob[6].qiqirn_mine_1, instance)
-            SpawnMob(ID.mob[6].qiqirn_mine_2, instance)
-        end
-    end]]
-
+    if instance:getStage() == 2 and progress == 1 then -- attempt to spawn socket
+        instance:getEntity(bit.band(ID.npc[2][4].SOCKET, 0xFFF), tpz.objType.NPC):setStatus(tpz.status.NORMAL)
+    elseif instance:getStage() == 3 and progress == 1 then -- attempt to spawn slot
+        instance:getEntity(bit.band(ID.npc[3][2].SLOT, 0xFFF), tpz.objType.NPC):setStatus(tpz.status.NORMAL)
+    end
 end
 
 function onEventFinish(player, csid, option)
---[[    local instance = player:getInstance()
+    local instance = player:getInstance()
+    local chars = instance:getChars()
+    if csid >= 200 and csid <= 210 and option == 1 then
+        for i,v in ipairs(chars) do
+            local playerX = player:getXPos();
+            local playerY = player:getYPos();
+            local playerZ = player:getZPos();
+            if  v:getID() ~= player:getID() then
+                v:startEvent(3)
+                v:timer(4000, function(player)
+                v:setPos(playerX, playerY, playerZ)
+                    end)
+            end
 
-    if csid >= 200 and csid <= 203 and option == 1 then
-        for id = ID.mob[2][csid - 199].mobs_start, ID.mob[2][csid - 199].mobs_end do
-            SpawnMob(id, instance)
-        end
-        instance:setProgress(csid - 199)
-        for id = ID.mob[1][2].rampart, ID.mob[1][2].mobs_end do
-            DespawnMob(id, instance)
-        end
-    elseif csid == 204 and option == 1 then
-        for i = 1, 2 do
-            for id = ID.mob[3][i].mobs_start, ID.mob[3][i].mobs_end do
-                SpawnMob(id, instance)
+            v:setHP(v:getMaxHP())
+            v:setMP(v:getMaxMP())
+            if v:getPet() then
+                local pet = v:getPet()
+                pet:setHP(pet:getMaxHP())
+                pet:setMP(pet:getMaxMP())
             end
         end
-        instance:setProgress(csid - 203)
-            for id = ID.mob[2][4].mobs_start, ID.mob[2][0].astrologer do
-                DespawnMob(id, instance)
-            end
-        DespawnMob(ID.mob[2][2].princess, instance)
-        DespawnMob(ID.mob[2][3].wahzil, instance)
-    elseif csid == 205 or csid == 206 and option == 1 then
-        for id = ID.mob[4][csid - 204].mobs_start, ID.mob[4][csid - 204].mobs_end do
-            SpawnMob(id, instance)
-            SpawnMob(ID.mob[4][csid - 204].rampart2, instance)
-        end
-        instance:setProgress(csid - 204)
-        for id = ID.mob[3][1].mobs_start, ID.mob[3].qiqirn_mine_2 do
+    end
+    
+    if csid == 200 and option == 1 then
+        for id = ID.mob[1][1].MOBS_START, ID.mob[1][6].MOBS_END do
             DespawnMob(id, instance)
         end
-    elseif csid == 207 or csid == 208 and option == 1 then
-        for i = 1, 3 do
-            for id = ID.mob[5][csid - 206][i].mobs_start, ID.mob[5][csid - 206][i].mobs_end do
-                SpawnMob(id, instance)
-            end
-        end
-        SpawnMob(ID.mob[5][csid - 206].rampart1, instance)
-        SpawnMob(ID.mob[5][csid - 206].rampart2, instance)
-        SpawnMob(ID.mob[5][csid - 206].rampart3, instance)
-        instance:setProgress(csid - 206)
-        for id = ID.mob[4][1].mobs_start, ID.mob[4].qiqirn_mine_1 do
+        
+    elseif csid >= 201 and csid <= 204 and option == 1 then
+        for id = ID.mob[2][1].DEADPAN_DEVILET, ID.mob[2][8].MOBS_END do
             DespawnMob(id, instance)
         end
-    elseif csid == 209 and option == 1 then
-        for id = ID.mob[6][1].mobs_start, ID.mob[6][1].mobs_end do
+        
+    elseif csid == 205 and option == 1 then
+        for id = ID.mob[4][1].MOBS_START, ID.mob[4][1].MOBS_END do -- spawn mobs in east/west rooms
             SpawnMob(id, instance)
         end
-        SpawnMob(ID.mob[6].rampart1, instance)
-        SpawnMob(ID.mob[6].rampart2, instance)
-        instance:setProgress(csid - 208)
-        for id = ID.mob[5][1][1].mobs_start, ID.mob[5][2].chariot do
+        for id = ID.mob[4][2].MOBS_START, ID.mob[4][2].MOBS_END do -- spawn mobs in east/west rooms
+            SpawnMob(id, instance)
+        end
+        SpawnMob(ID.mob[4][1].RAMPART1, instance)
+        SpawnMob(ID.mob[4][1].RAMPART2, instance)
+        SpawnMob(ID.mob[4][1].RAMPART3, instance)
+        SpawnMob(ID.mob[4][1].RAMPART4, instance)
+        
+        for id = ID.mob[3][1].DEVILET, ID.mob[3][8].GYROSCOPIC_GEARS do
             DespawnMob(id, instance)
         end
-    elseif csid == 210 and option == 1 then
-        SpawnMob(ID.mob[7][1].chariot, instance)
-        instance:setProgress(csid - 209)
-        for id = ID.mob[6].rampart1, ID.mob[6].rampart4 do
+        
+    elseif csid == 206 and option == 1 then
+        for id = ID.mob[4][3].MOBS_START, ID.mob[4][4].MOBS_END do -- spawn mobs on east side
+            SpawnMob(id, instance)
+        end
+        SpawnMob(ID.mob[4][4].RAMPART1, instance)
+        SpawnMob(ID.mob[4][4].RAMPART2, instance)
+        SpawnMob(ID.mob[4][4].RAMPART3, instance)
+        SpawnMob(ID.mob[4][4].RAMPART4, instance)
+        SpawnMob(ID.mob[4][5].ARCHAIC_CHARIOT, instance)
+        
+        for id = ID.mob[3][1].DEVILET, ID.mob[3][8].GYROSCOPIC_GEARS do
             DespawnMob(id, instance)
         end
-    end]]
+    
+    elseif csid == 207 and option == 1 then
+        for id = ID.mob[4][i].MOBS_START, ID.mob[4][i].CITADEL_CHELONIAN do
+            DespawnMob(id, instance)
+        end
+    end
+
+
 end

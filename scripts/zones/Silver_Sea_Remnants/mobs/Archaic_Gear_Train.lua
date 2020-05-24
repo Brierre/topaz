@@ -1,9 +1,12 @@
 -----------------------------------
--- Archaic Gear (train)
+-- Archaic Gear (patrol)
 -- Zone: Silver Sea Remnants
 -----------------------------------
-
-require("scripts/globals/pathfind");
+local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
+require("scripts/globals/status")
+require("scripts/globals/settings")
+require("scripts/globals/pathfind")
+mixins = {require("scripts/mixins/families/gears")}
 
 local path =
 {
@@ -17,7 +20,7 @@ local path =
     -286,-4,139,
     -260,-4,140,
     -259,-4,92,
-    -254,-4,78,
+    -262,-4,78,
     -259,-4,63,
     -262,-4,20,
     -234,-4,20,
@@ -47,32 +50,19 @@ local path =
     -260,0,197,
     -262,0,189,
     -250,0,171,
-};
-
------------------------------------
--- onMobSpawn Action
------------------------------------
+}
 
 function onMobSpawn(mob)
-    onMobRoam(mob);
-end;
-
-
------------------------------------
--- onPath Action
------------------------------------
+    onMobRoam(mob)
+--    onPath(mob)
+end
 
 function onPath(mob)
-    pathfind.patrol(mob, path, PATHFLAG_RUN);
-end;
-
------------------------------------
--- onMobRoam Action
------------------------------------
+    tpz.path.patrol(mob, path, tpz.path.flag.RUN);
+end
 
 function onMobRoam(mob)
-    -- move to most recent position if not on the path
-    if (mob:isFollowingPath() == false) then
-        mob:pathThrough(pathfind.first(path), PATHFLAG_RUN);
+    if not mob:isFollowingPath() then
+        mob:pathThrough(tpz.path.first(path), tpz.path.flag.RUN)
     end
-end;
+end

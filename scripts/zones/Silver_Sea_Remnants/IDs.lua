@@ -98,71 +98,64 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
                 DON_POROGGO = 17088668, -- slot NM, needs added to db
             },
             [5] = {
-                MOBS_START = 17088654, -- archaic gear x2
-                MOBS_END   = 17088655,
+                MOBS_START = 17088654, -- archaic gear x2 South side
+                MOBS_END   = 17088657, -- archaic gears x2
+                RAMPART1   = 17088638, -- archaic ramparts x4, reinforcements scripted
+                RAMPART2   = 17088642,
+                RAMPART3   = 17088646,
+                RAMPART4   = 17088650,
             },
             [6] = {
-                MOBS_START = 17088656, -- archaic gears x2
-                MOBS_END   = 17088657,
+                MOBS_START = 17088685, -- archaic gear x4 West side
+                MOBS_END   = 17088692, -- archaic gears x4
+                RAMPART1   = 17088669, -- archaic ramparts x4, East side, reinforcements scripted
+                RAMPART2   = 17088673,
+                RAMPART3   = 17088677,
+                RAMPART4   = 17088681,
             },
             [7] = {
-                MOBS_START = 17088638, -- archaic rampart x4
-                MOBS_END   = 17088653, -- reinforcements, scripted spawn
+
+                MOBS_START = 17088709, -- archaic gear x4 East side
+                MOBS_END   = 17088716, -- archaic gears x4
+                RAMPART1   = 17088693, -- archaic rampart x3 East side
+                RAMPART2   = 17088697,
+                RAMPART3   = 17088701,
+                RAMPART4   = 17088705, -- rampart that opens door to porter
             },
             [8] = {
-                MOBS_START = 17088685, -- archaic gear x4
-                MOBS_END   = 17088688,
-            },
-            [9] = {
-                MOBS_START = 17088689, -- archaic gears x4
-                MOBS_END   = 17088692,
-            },
-            [10] = {
-                MOBS_START = 17088669, -- archaic rampart x4
-                MOBS_END   = 17088684, -- reinforcements scripted spawn
-            },
-            [11] = {
-                MOBS_START = 17088693, -- archaic rampart x3
-                MOBS_END   = 17088704, -- reinforcements scripted spawn
-            },
-            [12] = {
-                MOBS_START = 17088705, -- archaic rampart x1
-                MOBS_END   = 17088708, -- reinforcements scripted spawn
-            },
-            [13] = {
-                MOBS_START = 17088709, -- archaic gear x4
-                MOBS_END   = 17088712,
-            },
-            [14] = {
-                MOBS_START = 17088713, -- archaic gears x4
-                MOBS_END   = 17088716,
-            },
-            [15] = {
                 GYROSCOPIC_GEARS = 17088717, -- gyroscopic gears nm
             },
         },
         [4] = {
             [1] = {
                 MOBS_START = 17088718, -- door always open on west side
-                MOBS_END   = 17088750,
+                MOBS_END   = 17088726,
+                RAMPART1   = 17088727,
+                RAMPART2   = 17088731,
+                RAMPART3   = 17088735,
+                RAMPART4   = 17088739,
             },
             [2] = {
-                MOBS_START = 17088751,
-                MOBS_END   = 17088756,
+                MOBS_START = 17088743, -- archaic gear/gears west side
+                MOBS_END   = 17088750,
             },
             [3] = {
-                MOBS_START = 17088757,
-                MOBS_END   = 17088766,
+                MOBS_START = 17088751, -- archaic gear train, east side
+                MOBS_END   = 17088756,
             },
             [4] = {
-                MOBS_START = 17088768, -- archaic ramparts x4, plus reinforcements, will need to be added
-                MOBS_END   = 17088783,
+                MOBS_START = 17088757, -- archaic gears
+                MOBS_END   = 17088766,
+                RAMPART1   = 17088768, -- archaic ramparts x4, kill all for NM rampart
+                RAMPART2   = 17088772,
+                RAMPART3   = 17088776,
+                RAMPART4   = 17088780,
             },
             [5] = {
                 ARCHAIC_CHARIOT = 17088767, --stationary until aggroed, center of room
             },
             [6] = {
-                ARCHAIC_RAMPART = 17088784, -- pops after other 4 ramparts are defeated, must be left unaggroed > 1 minute to pop boss
+                ARCHAIC_RAMPART_NM = 17088784, -- pops after other 4 ramparts are defeated, must be left unaggroed > 1 minute to pop boss
             },
             [7] = {
                 CITADEL_CHELONIAN = 17088785, --Citadel Chelonian will need to be added to DB, is spawned by single archaic rampart upon being left and unaggroed
@@ -173,7 +166,7 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
         },
     },
     
-        npc =    -- all doors start normal/unlocked/targetable except [1][4],[2][2],
+        npc =
     {
 		[1] = {
             [1] = {
@@ -249,5 +242,209 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
             },
         },
     }
+--[[    points =
+    {
+        [4] =
+        {
+            [0] = -- archaic gear train floor 4 patrol
+            {
+                point1 =
+                {
+                    -250,0,171, -- room 1
+                },
+                point2 =
+                {
+                    -262,0,189,
+                },
+                point3 =
+                {
+                    -259,0,219,
+                },
+                point4 =
+                {
+                    -288,0,219,
+                },
+                point5 =
+                {
+                    -300,0,209,
+                },
+                point6 =
+                {
+                    -300,0,187,
+                },
+                point7 =
+                {
+                    -300,-4,154,
+                },
+                point8 =
+                {
+                    -286,-4,139,
+                },
+                point9 =
+                {
+                    -260,-4,140,
+                },
+                point10 =
+                {
+                    -259,-4,92,
+                },
+                point11 =
+                {
+                    -262,-4,78,
+                },
+                point12 =
+                {
+                    -259,-4,63,
+                },
+                point13 =
+                {
+                    -262,-4,20,
+                },
+                point14 =
+                {
+                    -234,-4,20,
+                },
+                point15 =
+                {
+                    -220,-4,8,
+                },
+                point16 =
+                {
+                    -219,-4,-20,
+                },
+                point17 =
+                {
+                    -252,-4,-20,
+                },
+                point18 =
+                {
+                    -275,0,-20,
+                },
+                point19 =
+                {
+                    -291,0,-19,
+                },
+                point20 =
+                {
+                    -308,0,-29, -- turn around
+                },
+                point21 =
+                {
+                    -291,0,-19,
+                },
+                point22 =
+                {
+                    -275,0,-20,
+                },
+                point23 =
+                {
+                    -252,-4,-20,
+                },
+                point24 =
+                {
+                    -219,-4,-20,
+                },
+                point25 =
+                {
+                    -220,-4,8,
+                },
+                point26 =
+                {
+                    -234,-4,20,
+                },
+                point27 =
+                {
+                    -262,-4,20,
+                },
+                point28 =
+                {
+                    -259,-4,63,
+                },
+                point29 =
+                {
+                    -262,-4,78,
+                },
+                point30 =
+                {
+                    -259,-4,92,
+                },
+                point31 =
+                {
+                    -260,-4,140,
+                },
+                point32 =
+                {
+                    -286,-4,139,
+                },
+                point33 =
+                {
+                    -300,-4,154,
+                },
+                point34 =
+                {
+                    -300,0,187,
+                },
+                point35 =
+                {
+                    -300,0,209,
+                },
+                point36 =
+                {
+                    -288,0,219,
+                },
+                point37 =
+                {
+                    -259,0,219,
+                },
+                point38 =
+                {
+                    -262,0,189,
+                },
+                point39 =
+                {
+                    -250,0,171, -- room 1
+                },
+            },
+            [1] = --gears in center room east Floor 4, random pat
+            {
+                point1 =
+                {
+                    -286 -4 79
+                },
+                point2 =
+                {
+                    -275 -4 72
+                },
+                point3 =
+                {
+                    -264 -4 69
+                },
+                point4 =
+                {
+                    -260 -4 79
+                },
+                point5 =
+                {
+                    -255 -4 90
+                },
+                point6 =
+                {
+                    -244 -4 87
+                },
+                point7 =
+                {
+                    -233 -4 79
+                },
+                point8 =
+                {
+                    -244 -4 71
+                },
+                point9 =
+                {
+                    -255 -4 69
+                },
+            },
+        },
+    },]]
 }
 return zones[tpz.zone.SILVER_SEA_REMNANTS]

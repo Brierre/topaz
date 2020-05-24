@@ -4,7 +4,7 @@
 -- Trade Salvage Cells to pop 
 -- Gakke drops 2x the Cells traded
 -----------------------------------
-local ID = require("scripts/zones/Arrapago_Remnants/IDs")
+local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
 -----------------------------------
 
 function onTrade(player,npc,trade)

@@ -1,6 +1,6 @@
 -----------------------------------
--- Area: Silver Sea Remnants (misnamed _24a in npc list)
--- Door: Gilded Doors Floor 2 sw hallway
+-- Area: Silver Sea Remnants (was misnamed _24a in npc list)
+-- Door: Gilded Doors Floor 2 SW hallway
 -- @pos 180 -2 360
 -----------------------------------
 local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
@@ -18,7 +18,7 @@ function onEventUpdate(player,csid,option)
 end
 
 function onEventFinish(entity, eventid, result, door)
-    if (eventid == 300 and result == 1) then
+    if (eventid == 300 and result == 1 and (door:getInstance():getProgress() == 0)) then
         door:setAnimation(8)
         door:untargetable(true)
         local instance = door:getInstance()

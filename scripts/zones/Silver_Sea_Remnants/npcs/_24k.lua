@@ -1,7 +1,7 @@
 -----------------------------------
 -- Area: Silver Sea Remnants
--- Door: Gilded Doors Floor 2 east hallway
--- @pos 400 -6 420
+-- Door: Gilded Doors Floor 2 SE porter
+-- @pos 420 2 360
 -----------------------------------
 local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
 require("scripts/globals/status")

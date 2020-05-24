@@ -1,6 +1,6 @@
 -----------------------------------
 -- Area: Silver Sea Remnants
--- Door: Gilded Doors Floor 2 nw hallway
+-- Door: Gilded Doors Floor 2 NW hallway
 -- @pos 260 -2 480
 -----------------------------------
 local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
@@ -18,16 +18,13 @@ function onEventUpdate(player,csid,option)
 end
 
 function onEventFinish(entity, eventid, result, door)
-    if (eventid == 300 and result == 1) then
+    if (eventid == 300 and result == 1 and (door:getInstance():getProgress() == 0)) then
         door:setAnimation(8)
         door:untargetable(true)
         local instance = door:getInstance()
         instance:setStage(2)
         instance:setProgress(1)
         SpawnMob(ID.mob[2][1].DEADPAN_DEVILET, instance)
-        for i,v in pairs(ID.npc[2][4]) do
-            local npc = instance:getEntity(bit.band(v, 0xFFF), tpz.objType.NPC)
-            npc:setStatus(tpz.status.NORMAL)
-        end
+--        GetNPCByID(ID.npc[2][4].SOCKET, instance):setStatus(tpz.status.NORMAL)
     end
 end
