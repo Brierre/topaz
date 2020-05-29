@@ -2,6 +2,7 @@
 -- Area: Silver_Sea_Remnants
 -----------------------------------
 require("scripts/globals/zone")
+require("scripts/globals/salvage")
 -----------------------------------
 
 zones = zones or {}
@@ -173,7 +174,7 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
                 DOOR1 = 17089385, -- _240 at start, click to open, event 300? try AR _220 for example
             },
             [2] = {
-                ARMORY_CRATE = 17088809, --starting chest with temp items
+                ARMOURY_CRATE = 17088803, --starting chest
             },
             [3] = {
                 DOOR1 = 17089386, -- _241 west side door, targetable, lock [1][5] when chosen, spawns [1][3]
@@ -241,7 +242,65 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
                 DOOR1 = 17089416, -- _24v 
             },
         },
-    }
+    },
+    crate =
+    {
+        [1] = { -- floor 1 crates, meds only
+            [1] = {
+                CRATE1    = 17088787,
+                CRATE2    = 17088788,
+                CRATE3    = 17088789,
+                CRATE4    = 17088790,
+                CRATE5    = 17088791,
+                CRATE6    = 17088792,
+                CRATE7    = 17088793,
+                CRATE8    = 17088794,
+                CRATE9    = 17088795,
+                CRATE10   = 17088796,
+                CRATE11   = 17088797,
+                CRATE12   = 17088798,
+                CRATE13   = 17088799,
+                CRATE14   = 17088800,
+                CRATE15   = 17088801,
+                CRATE16   = 17088802,
+            },
+            [2] = { -- floor 2 crates, devilet/atc room
+                CRATE1    = 17088804,
+                CRATE2    = 17088805,
+                CRATE3    = 17088806,
+                CRATE4    = 17088807,
+            },
+            [3] = { -- floor 4 crates
+                CRATE1    = 17088808,
+                CRATE2    = 17088809,
+                CRATE3    = 17088010,
+                CRATE4    = 17088011,
+                CRATE5    = 17088012,
+                CRATE6    = 17088013,
+                CRATE7    = 17088014,
+                CRATE8    = 17088015,
+                CRATE9    = 17088016,
+                CRATE10   = 17088017,
+                CRATE11   = 17088018,
+                CRATE12   = 17088019,
+                CRATE13   = 17088020,
+                CRATE14   = 17088021,
+                CRATE15   = 17088022,
+                CRATE16   = 17088023,
+                CRATE17   = 17088024,
+                CRATE18   = 17088025,
+                CRATE19   = 17088026,
+                CRATE20   = 17088027,
+            },
+            [4] = { -- remaining crates to be dropped by mobs
+                RANDOM1   = 17089348,
+                RANDOM2   = 17089349,
+                RANDOM3   = 17089350,
+                RANDOM4   = 17089351,
+            },
+        },
+    },
+}
 --[[    points =
     {
         [4] =
@@ -446,5 +505,5 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
             },
         },
     },]]
-}
+
 return zones[tpz.zone.SILVER_SEA_REMNANTS]

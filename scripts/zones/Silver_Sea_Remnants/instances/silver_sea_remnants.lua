@@ -129,7 +129,7 @@ function onEventFinish(player, csid, option)
         end
     
     elseif csid == 207 and option == 1 then
-        for id = ID.mob[4][i].MOBS_START, ID.mob[4][i].CITADEL_CHELONIAN do
+        for id = ID.mob[4][1].MOBS_START, ID.mob[4][7].CITADEL_CHELONIAN do
             DespawnMob(id, instance)
         end
     end

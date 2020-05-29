@@ -10,7 +10,8 @@ mixins = {require("scripts/mixins/families/gears")}
 function onMobDeath(mob, player, isKiller)
     local instance = mob:getInstance()
     if (isKiller) then
-        if (player:getInstance():getStage() == 3) and (player:getInstance():getProgress() == 1 or player:getInstance():getProgress() == 2) then
+        if (player:getInstance():getStage() == 3) and (player:getInstance():getProgress() == 1 or player:getInstance():getProgress() == 2) 
+            and not (player:getInstance():getStage() == 4) then
             local allDeadGearsOne = true        
             local allDeadGearsTwo = true
             

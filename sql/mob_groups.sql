@@ -3379,10 +3379,10 @@ INSERT INTO `mob_groups` VALUES (21,2878,76,'Night_Eft',0,128,0,0,0,73,73,0);
 INSERT INTO `mob_groups` VALUES (22,2431,76,'Long-Armed_Chariot',0,128,1531,0,0,85,85,0);
 INSERT INTO `mob_groups` VALUES (23,6172,76,'Archaic_Gear_Train',0,0,0,0,0,73,75,0);
 INSERT INTO `mob_groups` VALUES (24,6173,76,'Archaic_Rampart_NM',0,128,0,0,0,73,75,0);
-INSERT INTO `mob_groups` VALUES (25,5431,76,'Ashu_Talif_Crew3',30,0,0,500,9999,73,75,0); -- These ashu talif respawn immediately
-INSERT INTO `mob_groups` VALUES (26,5430,76,'Ashu_Talif_Crew2',30,0,0,500,0,73,75,0);
-INSERT INTO `mob_groups` VALUES (27,5728,76,'Ashu_Talif_Crew4',30,0,0,500,0,73,75,0);
-INSERT INTO `mob_groups` VALUES (28,263,76,'Ashu_Talif_Crew',30,0,0,500,0,73,75,0);
+INSERT INTO `mob_groups` VALUES (25,5431,76,'Ashu_Talif_Crew3',10,0,0,500,9999,73,75,0); -- These ashu talif respawn immediately
+INSERT INTO `mob_groups` VALUES (26,5430,76,'Ashu_Talif_Crew2',10,0,0,500,0,73,75,0);
+INSERT INTO `mob_groups` VALUES (27,5728,76,'Ashu_Talif_Crew4',10,0,0,500,0,73,75,0);
+INSERT INTO `mob_groups` VALUES (28,263,76,'Ashu_Talif_Crew',10,0,0,500,0,73,75,0);
 INSERT INTO `mob_groups` VALUES (29,6181,76,'Archaic_Gears_Train',0,0,0,0,0,73,75,0);
 INSERT INTO `mob_groups` VALUES (2489,263,76,'Ashu_Talif_Crew',0,128,0,0,0,73,75,0);
 INSERT INTO `mob_groups` VALUES (2490,732,76,'Citadel_Chelonian',0,128,474,0,0,73,73,0);

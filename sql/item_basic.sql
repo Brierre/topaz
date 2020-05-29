@@ -5107,7 +5107,7 @@ INSERT INTO `item_basic` VALUES (5432,0,'dusty_ether','dusty_ether',1,63040,0,1,
 INSERT INTO `item_basic` VALUES (5433,0,'dusty_elixir','dusty_elixir',1,63040,0,1,0);
 INSERT INTO `item_basic` VALUES (5434,0,'bottle_of_fanatics_drink','fanatics_drink',1,63040,0,1,0);
 INSERT INTO `item_basic` VALUES (5435,0,'bottle_of_fools_drink','fools_drink',1,63040,0,1,0);
-INSERT INTO `item_basic` VALUES (5436,0,'dusty_scroll_of_reraise','dusty_reraise',1,63040,0,1,0);
+INSERT INTO `item_basic` VALUES (5436,0,'dusty_scroll_of_reraise','dusty_reraise',1,63168,0,1,0);
 INSERT INTO `item_basic` VALUES (5437,0,'flask_of_strange_milk','strange_milk',1,63040,0,1,0);
 INSERT INTO `item_basic` VALUES (5438,0,'bottle_of_strange_juice','strange_juice',1,63040,0,1,0);
 INSERT INTO `item_basic` VALUES (5439,0,'bottle_of_vicars_drink','vicars_drink',1,63040,0,1,0);

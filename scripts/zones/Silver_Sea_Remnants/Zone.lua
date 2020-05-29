@@ -52,7 +52,7 @@ function onEventFinish(player, csid, option)
             v:setPos(0,0,0,0,72)
         end
         
--- if you leave the following code in, the !cs command will warp pt members
+-- if you leave the following code in, the !cs command will also warp pt members
 --[[    elseif csid >= 200 and csid <= 210 and option == 1 then 
         for i,v in ipairs(chars) do
             local playerX = player:getXPos();
