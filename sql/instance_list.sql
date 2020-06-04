@@ -107,11 +107,11 @@ INSERT INTO `instance_list` VALUES (58,'path_of_darkness',72,30,500,0,-572,192,1
 INSERT INTO `instance_list` VALUES (59,'nashmeira\'s_plea',72,45,-444,-4,420,127,143,143,143,143);
 -- INSERT INTO `instance_list` VALUES (60,'forging_a_new_myth',72,30,0.000,0.000,0.000,0,-1,-1,-1,-1);
 -- INSERT INTO `instance_list` VALUES (61,'waking_the_colossus',72,30,0.000,0.000,0.000,0,-1,-1,-1,-1);
--- INSERT INTO `instance_list` VALUES (62,'zhayolm_remnants',72,100,0.000,0.000,0.000,0,-1,-1,-1,-1);
+INSERT INTO `instance_list` VALUES (62,'zhayolm_remnants',72,100,340.000,0.000,-593.000,190,-1,-1,-1,-1);
 -- INSERT INTO `instance_list` VALUES (64,'zhayolm_remnants_ii',72,100,0.000,0.000,0.000,0,-1,-1,-1,-1);
 INSERT INTO `instance_list` VALUES (65,'arrapago_remnants',72,100,340.000,0.000,-246.000,63,-1,-1,-1,-1);
 -- INSERT INTO `instance_list` VALUES (67,'arrapago_remnants_ii',72,100,340.000,0.000,-246.000,63,-1,-1,-1,-1);
--- INSERT INTO `instance_list` VALUES (68,'bhaflau_remnants',72,100,0.000,0.000,0.000,0,-1,-1,-1,-1);
+INSERT INTO `instance_list` VALUES (68,'bhaflau_remnants',72,100,340.000,20.000,-555.500,190,-1,-1,-1,-1);
 -- INSERT INTO `instance_list` VALUES (70,'bhaflau_remnants_ii',72,100,0.000,0.000,0.000,0,-1,-1,-1,-1);
 INSERT INTO `instance_list` VALUES (71,'silver_sea_remnants',72,100,340.000,12.000,-165.500,63,-1,-1,-1,-1);
 -- INSERT INTO `instance_list` VALUES (73,'silver_sea_remnants_ii',72,100,340.000,12.000,-165.500,63,-1,-1,-1,-1);

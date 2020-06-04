@@ -5,6 +5,7 @@
 -----------------------------------
 local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
 require("scripts/globals/status")
+require("scripts/globals/salvage")
 
 function onTrigger(entity, npc)
     if (npc:getInstance():getStage() == 2) and (npc:getInstance():getProgress() == 0) then
@@ -26,6 +27,12 @@ function onEventFinish(entity, eventid, result, door)
         instance:setProgress(4)
         for id = ID.mob[2][5].MOBS_START, ID.mob[2][6].MOBS_END do -- spawn mobs in SE room
             SpawnMob(id, instance)
+        end
+        for k,v in pairs(ID.crate[2].seStatic) do -- spawn floor 2 crates
+            local npc = instance:getEntity(bit.band(k, 0xFFF), tpz.objType.NPC)
+            npc:setPos(unpack(v))
+            npc:setStatus(tpz.status.NORMAL)
+            salvageUtil.getDrops(npc, instance)
         end
     end
 end

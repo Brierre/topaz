@@ -6,6 +6,7 @@
 local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
 require("scripts/globals/instance")
 require("scripts/globals/status")
+require("scripts/globals/salvage")
 -----------------------------------
 
 function afterInstanceRegister(player)
@@ -74,7 +75,7 @@ function onEventFinish(player, csid, option)
             if  v:getID() ~= player:getID() then
                 v:startEvent(3)
                 v:timer(4000, function(player)
-                v:setPos(playerX, playerY, playerZ)
+                v:setPos(playerX, playerY, playerZ, 192)
                     end)
             end
 
@@ -123,7 +124,7 @@ function onEventFinish(player, csid, option)
         SpawnMob(ID.mob[4][4].RAMPART3, instance)
         SpawnMob(ID.mob[4][4].RAMPART4, instance)
         SpawnMob(ID.mob[4][5].ARCHAIC_CHARIOT, instance)
-        
+
         for id = ID.mob[3][1].DEVILET, ID.mob[3][8].GYROSCOPIC_GEARS do
             DespawnMob(id, instance)
         end

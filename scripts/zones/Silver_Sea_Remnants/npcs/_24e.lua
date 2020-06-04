@@ -5,6 +5,7 @@
 -----------------------------------
 local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
 require("scripts/globals/status")
+require("scripts/globals/salvage")
 
 function onTrigger(entity, npc)
     if (npc:getInstance():getStage() == 2) and (npc:getInstance():getProgress() == 0) then
@@ -22,9 +23,15 @@ function onEventFinish(entity, eventid, result, door)
         door:setAnimation(8)
         door:untargetable(true)
         local instance = door:getInstance()
+        local pos = 1
         instance:setStage(2)
         instance:setProgress(1)
         SpawnMob(ID.mob[2][1].DEADPAN_DEVILET, instance)
---        GetNPCByID(ID.npc[2][4].SOCKET, instance):setStatus(tpz.status.NORMAL)
+        for k,v in pairs(ID.crate[2].nwStatic) do -- spawn floor 2 crates
+            local npc = instance:getEntity(bit.band(k, 0xFFF), tpz.objType.NPC)
+            npc:setPos(unpack(v))
+            npc:setStatus(tpz.status.NORMAL)
+            salvageUtil.getDrops(npc, instance)
+        end
     end
 end

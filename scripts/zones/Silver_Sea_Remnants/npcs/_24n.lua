@@ -5,6 +5,7 @@
 -----------------------------------
 local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
 require("scripts/globals/status")
+require("scripts/globals/salvage")
 
 function onTrigger(entity, npc)
     if (npc:getInstance():getStage() == 3) and (npc:getInstance():getProgress() == 0) then
@@ -26,6 +27,12 @@ function onEventFinish(entity, eventid, result, door)
         instance:setProgress(1)
         for id = ID.mob[3][1].DEVILET, ID.mob[3][2].MOBS_END do -- spawn mobs in center slot room
             SpawnMob(id, instance)
+        end
+        for k, v in pairs(ID.crate[3].northStatic) do
+            local npc = instance:getEntity(bit.band(k, 0xFFF), tpz.objType.NPC)
+            npc:setPos(unpack(v))
+            npc:setStatus(tpz.status.NORMAL)
+            salvageUtil.getDrops(npc, instance)
         end
 --        GetNPCByID(ID.npc[3][2].SLOT, instance):setStatus(tpz.status.NORMAL)
     end

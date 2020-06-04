@@ -19,7 +19,7 @@ function onEventFinish(entity, eventid, result, door)
         door:untargetable(true)
         local instance = door:getInstance()
         for i,v in pairs(ID.npc[1][2]) do -- spawn first chest 
-            local npc = instance:getEntity(bit.band(v, 0xFFF), tpz.objType.NPC); -- replace with GetNPCByID()??
+            local npc = instance:getEntity(bit.band(v, 0xFFF), tpz.objType.NPC)
             npc:setStatus(tpz.status.NORMAL)
         end
     end

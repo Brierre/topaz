@@ -1,6 +1,6 @@
 -----------------------------------
 -- Area: Alzadaal Undersea Ruins
--- Door: Gilded Gateway (Arrapago)
+-- Door: Gilded Gateway (Silver Sea Remnants Entrance)
 -- !pos -580 0 -159 72
 -----------------------------------
 require("scripts/globals/keyitems")

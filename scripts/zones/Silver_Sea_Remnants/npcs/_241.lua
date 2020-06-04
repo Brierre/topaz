@@ -28,10 +28,11 @@ function onEventFinish(entity, eventid, result, door)
         for id = ID.mob[1][3].MOBS_START, ID.mob[1][4].MOBS_END do -- spawn mobs on west side
             SpawnMob(id, instance)
         end
-        for i,v in pairs(ID.npc[1][1]) do -- spawn floor 1 crates
-            local npc = instance:getEntity(bit.band(v, 0xFFF), tpz.objType.NPC); -- replace with GetNPCByID()??
+        for k,v in pairs(ID.crate[1].westStatic) do -- spawn floor 1 crates
+            local npc = instance:getEntity(bit.band(k, 0xFFF), tpz.objType.NPC)
+            npc:setPos(unpack(v))
             npc:setStatus(tpz.status.NORMAL)
-            getDrops(npc, instance)
+            salvageUtil.getDropsFloorOne(npc, instance)
         end
     end
 end

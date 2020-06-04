@@ -44,6 +44,10 @@ function onZoneIn(player,prevZone)
             player:setPos(-579, 0.05, -100, 192)
         elseif prevZone == tpz.zone.SILVER_SEA_REMNANTS then
             player:setPos(580, 0.05, 500, 320)
+        elseif prevZone == tpz.zone.ZHAYOLM_REMNANTS then
+            player:setPos(-580, 0.05, -460, 180)
+        elseif prevZone == tpz.zone.BHAFLAU_REMNANTS then
+            player:setPos(620, 0.05, -260, 190)
         else
             player:setPos(222.798, -0.5, 19.872, 0)
         end
