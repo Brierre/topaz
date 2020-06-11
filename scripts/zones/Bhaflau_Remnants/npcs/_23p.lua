@@ -24,12 +24,9 @@ function onEventFinish(entity, eventid, result, door)
         door:untargetable(true)
         local instance = door:getInstance()
         instance:setStage(4)
-        instance:setProgress(0)
-        for k,v in pairs(ID.crate[4].eastStatic) do -- spawn floor 4 crates
-            local npc = instance:getEntity(bit.band(k, 0xFFF), tpz.objType.NPC)
-            npc:setPos(unpack(v))
-            npc:setStatus(tpz.status.NORMAL)
-            salvageUtil.getDropsFloorFour(npc, instance)
+        instance:setProgress(2)
+        for id = ID.mob[4][1].MOBS_START, ID.mob[4][1].MOBS_END do -- spawn mobs on east path
+            SpawnMob(id, instance)
         end
     end
 end

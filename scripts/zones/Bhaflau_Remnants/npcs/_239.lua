@@ -7,7 +7,7 @@ local ID = require("scripts/zones/Bhaflau_Remnants/IDs")
 require("scripts/globals/status")
 
 function onTrigger(entity, npc)
-    if (npc:getInstance():getStage() == 1) then
+    if (npc:getInstance():getStage() >= 1) then
         entity:startEvent(300)
     else
         entity:messageSpecial(ID.text.DOOR_IS_SEALED)
@@ -21,11 +21,17 @@ function onEventFinish(entity, eventid, result, door)
     local instance = door:getInstance()
     if (eventid == 300 and result == 1) then
         if (door:getInstance():getProgress() == 3) then
-            for id = ID.mob[1][5].MOBS_START, ID.mob[1][6].MOBS_END do
+            for id = ID.mob[1][7].MOBS_START, ID.mob[1][7].MOBS_END do
+                SpawnMob(id, instance)
+            end
+            for id = ID.mob[1][8].MOBS_START, ID.mob[1][8].MOBS_END do
                 SpawnMob(id, instance)
             end
         elseif (door:getInstance():getProgress() == 4) then
-            for id = ID.mob[1][4].MOBS_START, ID.mob[1][5].MOBS_END do
+            for id = ID.mob[1][8].MOBS_START, ID.mob[1][8].MOBS_END do
+                SpawnMob(id, instance)
+            end
+            for id = ID.mob[1][9].MOBS_START, ID.mob[1][9].MOBS_END do
                 SpawnMob(id, instance)
             end
         end 

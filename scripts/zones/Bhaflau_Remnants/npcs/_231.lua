@@ -25,15 +25,13 @@ function onEventFinish(entity, eventid, result, door)
         local instance = door:getInstance()
         instance:setStage(1)
         instance:setProgress(1)
-        for id = ID.mob[1][1].MOBS_START, ID.mob[1][1].MOBS_END do -- spawn mobs on east side
+        for id = ID.mob[1][2].MOBS_START, ID.mob[1][3].MOBS_END do -- spawn mobs on east side
             SpawnMob(id, instance)
         end
-        SpawnMob(ID.mob[1][2].MAD_BOMBER, instance)
-        --[[for k,v in pairs(ID.crate[1].westStatic) do -- spawn floor 1 crates
-            local npc = instance:getEntity(bit.band(k, 0xFFF), tpz.objType.NPC)
-            npc:setPos(unpack(v))
-            npc:setStatus(tpz.status.NORMAL)
-            salvageUtil.getDropsFloorOne(npc, instance)
-        end]]
+        if math.random(1,2) == 1 then
+            SpawnMob(ID.mob[1][4].MAD_BOMBER, instance):setPos(420.48,15.498,-291.39,58)
+        else
+            SpawnMob(ID.mob[1][4].MAD_BOMBER, instance):setPos(451.48,15.498,-459.39,251)
+        end
     end
 end

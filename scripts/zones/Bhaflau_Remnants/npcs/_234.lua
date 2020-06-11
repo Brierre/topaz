@@ -21,5 +21,11 @@ function onEventFinish(entity, eventid, result, door)
     if (eventid == 300 and result == 1) then
         door:setAnimation(8)
         door:untargetable(true)
+        local instance = door:getInstance()
+        instance:setStage(1)
+        instance:setProgress(2)
+        for id = ID.mob[1][6].MOBS_START, ID.mob[1][6].MOBS_END do -- spawn mobs on west side
+            SpawnMob(id, instance)
+        end
     end
 end

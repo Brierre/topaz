@@ -23,13 +23,9 @@ function onEventFinish(entity, eventid, result, door)
         door:untargetable(true)
         local instance = door:getInstance()
         instance:setStage(3)
-        instance:setProgress(1)
-        for id = ID.mob[3][5].MOBS_START, ID.mob[3][5].MOBS_END do -- spawn mobs in southcentral room
+        instance:setProgress(2)
+        for id = ID.mob[3][3].MOBS_START, ID.mob[3][3].MOBS_END do -- spawn mobs in southcentral room
             SpawnMob(id, instance)
         end
-        SpawnMob(ID.mob[3][5].RAMPART1, instance)
-        SpawnMob(ID.mob[3][5].RAMPART2, instance)
-        SpawnMob(ID.mob[3][5].RAMPART3, instance)
-        SpawnMob(ID.mob[3][5].RAMPART4, instance)
     end
 end

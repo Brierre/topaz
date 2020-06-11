@@ -58,9 +58,9 @@ end
 
 function onInstanceProgressUpdate(instance, progress, elapsed)
     if instance:getStage() == 2 and progress == 1 then -- attempt to spawn socket
-        instance:getEntity(bit.band(ID.npc[2][4].SOCKET, 0xFFF), tpz.objType.NPC):setStatus(tpz.status.NORMAL)
+        --instance:getEntity(bit.band(ID.npc[2][4].SOCKET, 0xFFF), tpz.objType.NPC):setStatus(tpz.status.NORMAL)
     elseif instance:getStage() == 3 and progress == 1 then -- attempt to spawn slot
-        instance:getEntity(bit.band(ID.npc[3][2].SLOT, 0xFFF), tpz.objType.NPC):setStatus(tpz.status.NORMAL)
+        --instance:getEntity(bit.band(ID.npc[3][2].SLOT, 0xFFF), tpz.objType.NPC):setStatus(tpz.status.NORMAL)
     end
 end
 
@@ -90,49 +90,49 @@ function onEventFinish(player, csid, option)
     end
     
     if csid == 200 and option == 1 then
-        for id = ID.mob[1][1].MOBS_START, ID.mob[1][6].MOBS_END do
-            DespawnMob(id, instance)
-        end
+        --for id = ID.mob[1][1].MOBS_START, ID.mob[1][6].MOBS_END do
+            --DespawnMob(id, instance)
+        --end
         
     elseif csid >= 201 and csid <= 204 and option == 1 then
-        for id = ID.mob[2][1].DEADPAN_DEVILET, ID.mob[2][8].MOBS_END do
-            DespawnMob(id, instance)
-        end
+        --for id = ID.mob[2][1].DEADPAN_DEVILET, ID.mob[2][8].MOBS_END do
+            --DespawnMob(id, instance)
+        --end
         
     elseif csid == 205 and option == 1 then
-        for id = ID.mob[4][1].MOBS_START, ID.mob[4][1].MOBS_END do -- spawn mobs in east/west rooms
-            SpawnMob(id, instance)
-        end
-        for id = ID.mob[4][2].MOBS_START, ID.mob[4][2].MOBS_END do -- spawn mobs in east/west rooms
-            SpawnMob(id, instance)
-        end
-        SpawnMob(ID.mob[4][1].RAMPART1, instance)
-        SpawnMob(ID.mob[4][1].RAMPART2, instance)
-        SpawnMob(ID.mob[4][1].RAMPART3, instance)
-        SpawnMob(ID.mob[4][1].RAMPART4, instance)
+        --for id = ID.mob[4][1].MOBS_START, ID.mob[4][1].MOBS_END do -- spawn mobs in east/west rooms
+            --SpawnMob(id, instance)
+        --end
+        --for id = ID.mob[4][2].MOBS_START, ID.mob[4][2].MOBS_END do -- spawn mobs in east/west rooms
+            --SpawnMob(id, instance)
+        --end
+        --SpawnMob(ID.mob[4][1].RAMPART1, instance)
+        --SpawnMob(ID.mob[4][1].RAMPART2, instance)
+        --SpawnMob(ID.mob[4][1].RAMPART3, instance)
+        --SpawnMob(ID.mob[4][1].RAMPART4, instance)
         
-        for id = ID.mob[3][1].DEVILET, ID.mob[3][8].GYROSCOPIC_GEARS do
-            DespawnMob(id, instance)
-        end
+        --for id = ID.mob[3][1].DEVILET, ID.mob[3][8].GYROSCOPIC_GEARS do
+            --DespawnMob(id, instance)
+        --end
         
     elseif csid == 206 and option == 1 then
-        for id = ID.mob[4][3].MOBS_START, ID.mob[4][4].MOBS_END do -- spawn mobs on east side
-            SpawnMob(id, instance)
-        end
-        SpawnMob(ID.mob[4][4].RAMPART1, instance)
-        SpawnMob(ID.mob[4][4].RAMPART2, instance)
-        SpawnMob(ID.mob[4][4].RAMPART3, instance)
-        SpawnMob(ID.mob[4][4].RAMPART4, instance)
-        SpawnMob(ID.mob[4][5].ARCHAIC_CHARIOT, instance)
+        --for id = ID.mob[4][3].MOBS_START, ID.mob[4][4].MOBS_END do -- spawn mobs on east side
+            --SpawnMob(id, instance)
+        --end
+        --SpawnMob(ID.mob[4][4].RAMPART1, instance)
+        --SpawnMob(ID.mob[4][4].RAMPART2, instance)
+        --SpawnMob(ID.mob[4][4].RAMPART3, instance)
+        --SpawnMob(ID.mob[4][4].RAMPART4, instance)
+        --SpawnMob(ID.mob[4][5].ARCHAIC_CHARIOT, instance)
 
-        for id = ID.mob[3][1].DEVILET, ID.mob[3][8].GYROSCOPIC_GEARS do
-            DespawnMob(id, instance)
-        end
+        --for id = ID.mob[3][1].DEVILET, ID.mob[3][8].GYROSCOPIC_GEARS do
+            --DespawnMob(id, instance)
+        --end
     
     elseif csid == 207 and option == 1 then
-        for id = ID.mob[4][1].MOBS_START, ID.mob[4][7].CITADEL_CHELONIAN do
-            DespawnMob(id, instance)
-        end
+        --for id = ID.mob[4][1].MOBS_START, ID.mob[4][7].CITADEL_CHELONIAN do
+            --DespawnMob(id, instance)
+        --end
     end
 
 

@@ -12,8 +12,10 @@ function onMobSpawn(mob)
 end
 
 function onMobDeath(mob, player, isKiller)
+    if isKiller then
         if math.random(1,10) <= 2 then
-            for k,v in pairs(ID.crate[5]) do
+            for k,v in pairs(ID.crate[1]) do
+                local instance = player:getInstance()
                 local npc = instance:getEntity(bit.band(v, 0xFFF), tpz.objType.NPC)
                 if npc:getStatus() == (tpz.status.DISAPPEAR) then
                     local pos = mob:getPos()
@@ -24,4 +26,5 @@ function onMobDeath(mob, player, isKiller)
                 end
             end
         end
+    end
 end

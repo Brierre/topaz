@@ -24,9 +24,9 @@ function onEventFinish(entity, eventid, result, door)
         local instance = door:getInstance()
         instance:setStage(2)
         instance:setProgress(1)
-        SpawnMob(ID.mob[2].DORMANT_RAMPART, instance):setPos(468,0,260,128) -- spawn on east side
         for id = ID.mob[2][2].MOBS_START, ID.mob[2][2].MOBS_END do
             SpawnMob(id, instance)
         end
+        --SpawnMob(ID.mob[2][1].DORMANT_RAMPART):setPos(468,0,260,128) -- spawn on east side
     end
 end

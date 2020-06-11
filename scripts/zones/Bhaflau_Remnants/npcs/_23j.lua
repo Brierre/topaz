@@ -25,14 +25,8 @@ function onEventFinish(entity, eventid, result, door)
         local instance = door:getInstance()
         instance:setStage(3)
         instance:setProgress(0)
-        for id = ID.mob[2][5].MOBS_START, ID.mob[2][6].MOBS_END do -- spawn mobs in SE room
+        for id = ID.mob[3][4].MOBS_START, ID.mob[3][4].MOBS_END do
             SpawnMob(id, instance)
-        end
-        for k,v in pairs(ID.crate[2].seStatic) do -- spawn floor 2 crates
-            local npc = instance:getEntity(bit.band(k, 0xFFF), tpz.objType.NPC)
-            npc:setPos(unpack(v))
-            npc:setStatus(tpz.status.NORMAL)
-            salvageUtil.getDrops(npc, instance)
         end
     end
 end

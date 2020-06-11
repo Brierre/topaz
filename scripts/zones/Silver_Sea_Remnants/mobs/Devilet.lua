@@ -7,10 +7,6 @@ require("scripts/globals/status")
 require("scripts/globals/settings")
 require("scripts/globals/salvage")
 
-function onMobSpawn(mob)
-
-end
-
 function onMobDeath(mob, player, isKiller)
     if isKiller then
         local instance = mob:getInstance()
@@ -26,12 +22,6 @@ function onMobDeath(mob, player, isKiller)
         
             if allDead then
                 instance:setProgress(6) -- set progress when all 4 are dead
-            end
-        
-        elseif (player:getInstance():getStage() == 3) and (player:getInstance():getProgress() == 1) then
-            if GetMobByID(ID.mob[3][1].DEVILET, instance):isDead() then
-                instance:setStage(3)
-                instance:setProgress(2)
             end
         end
         if math.random(1,10) <= 2 then

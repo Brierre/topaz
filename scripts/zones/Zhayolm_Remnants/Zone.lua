@@ -7,11 +7,11 @@ local ID = require("scripts/zones/Zhayolm_Remnants/IDs")
 -----------------------------------
 
 function onInitialize(zone)
-    --[[zone:registerRegion(1,  336, -1, -303,  343, -1, -296)  -- map 1 porter to F2 (340 -0.5 540)
-    zone:registerRegion(2,  256,  3,  377,  262,  3,  383)  -- map 2 sw porter to F3 (-260 -0.5 -460) pad #4 se
-    zone:registerRegion(3,  296, -1,  617,  302, -1,  623)  -- map 2 nw porter to F3 (-420 -0.5 -460) pad #3 sw
-    zone:registerRegion(4,  417,  3,  377,  423,  3,  383)  -- map 2 se porter to F3 (-300 -0.5 -220) pad #2 ne
-    zone:registerRegion(5,  376, -1,  616,  383, -1,  623)  -- map 2 ne porter to F3 (-380 -0.5 -220) pad #1 nw
+    zone:registerRegion(1,  416.679,  -21,  -343.569,  423.459,  -21,  -336.554)  -- F1 se porter to F2 (420 -0.5 20.461)
+    zone:registerRegion(2,  416.516, -20.9, -503.437,  423.486, -20.9, -496.481)  -- F1 ne porter to F2 (420 -0.5 20.461)
+    zone:registerRegion(3,  256.508, -21,  -503.454,  263.514, -21,  -496.444)  -- F1 sw porter to F2 (420 -0.5 20.461)
+    zone:registerRegion(4,  256.561,  -21,  -343.429,  263.531,  -21,  -336.425)  -- F1 nw porter to F2 (420 -0.5 20.461)
+    zone:registerRegion(5,  336.585, -5,  -63.474,  343.525, -5,  -56.428)  -- F2 porter to F3 ()
     zone:registerRegion(6, -463, -5, -303, -456, -5, -296)  -- map 3 w porter to F4 (-460 -0.5 180) pad #1 w 
     zone:registerRegion(7, -223, -5, -303, -216, -5, -296)  -- map 3 e porter to F4 (-220 -0.5 180) pad #2 e
     zone:registerRegion(8, -342, -5,   97, -336, -5,  103)  -- map 4 porter to F5 (-340 -0.5 660)
@@ -20,7 +20,7 @@ function onInitialize(zone)
     zone:registerRegion(11, 333, -0.001, -416, 346, -0.001, -416) -- fomor aggro region floor 1 end]]
 end
 
-function onZoneIn(player,prevZone)
+function onInstanceZoneIn(player,instance)
     local cs = -1
     
     local pos = player:getPos()

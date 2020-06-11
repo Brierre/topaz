@@ -328,5 +328,30 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
             RC20    = 17088822,
         },
     },
+    --[[points =
+    {
+        [3] =
+        {
+            [1] = -- devilet NM path
+            {
+                point1 =
+                {
+                    -313,0,-327, -- SE corner
+                },
+                point2 =
+                {
+                    -366,0,-327, -- SW corner
+                },
+                point3 =
+                {
+                    -366,0,-273, -- NW corner
+                },
+                point4 =
+                {
+                    -313,0,-273, -- NE corner
+                },
+            },
+        },
+    },]]
 }
 return zones[tpz.zone.SILVER_SEA_REMNANTS]

@@ -33,89 +33,128 @@ zones[tpz.zone.BHAFLAU_REMNANTS] =
     {
         [1] = {
             [1] = {
-                MOBS_START = 17084427, -- east, eruca, gemologist, bifrons
-                MOBS_END   = 17084449,
+                MOBS_START = 17084434, -- east, eruca, gemologist, bifrons
+                MOBS_END   = 17084446,
             },
             [2] = {
-                MAD_BOMBER = 17084481,
+                MOBS_START = 17084427, -- east, eruca, gemologist
+                MOBS_END   = 17084433,
             },
             [3] = {
-                MOBS_START = 17084450, -- west, wamouracampa, lapidarist, bifrons
-                MOBS_END   = 17084472,
+                MOBS_START = 17084447, -- bifrons
+                MOBS_END   = 17084449,
             },
             [4] = {
+                MAD_BOMBER = 17084481,
+            },
+            [5] = {
+                MOBS_START = 17084450, -- west, wamouracampa, bifrons
+                MOBS_END   = 17084456,
+            },
+            [6] = {
+                MOBS_START = 17084457, -- west, wamouracampa, lapidarist, bifrons
+                MOBS_END   = 17084472,
+            },
+            [7] = {
                 MOBS_START = 17084478, -- east, scorps
                 MOBS_END   = 17084480,
             },
-            [5] = {
+            [8] = {
                 MOBS_START = 17084473, -- trolls
                 MOBS_END   = 17084474,
             },
-            [6] = {
+            [9] = {
                 MOBS_START = 17084475, -- west, wamoura
                 MOBS_END   = 17084477,
             },
         },
         [2] = {
             [1] = {
-                MOBS_START = 17084482, -- empathetic flan
-                MOBS_END   = 17084485,
+                MOBS_START          = 17084482, -- empathic flan
+                MOBS_END            = 17084485,
+                --DORMANT_RAMPART     = 17084689, -- spawns reactionary
+                REACTIONARY_RAMPART = 17084692, -- spawns hunting wasps 4700-4704
+                FLUX_FLAN           = 17084720,
+                SKIRMISH_PEPHEDRO   = 17084705, -- check this number, not in list
             },
             [2] = {
-                MOBS_START = 17084501, -- trolls and scorps
-                MOBS_END   = 17084520,
-            },
-            [3] = {
-                MOBS_START = 17084489, -- east, trolls and scorps
+                MOBS_START = 17084486, -- east, northern and southern small room
                 MOBS_END   = 17084500,
             },
+            [3] = {
+                MOBS_START = 17084501, -- east, northeast large room
+                MOBS_END   = 17084510,
+            },
             [4] = {
-                MOBS_START = 17084486, -- scorps 1
-                MOBS_END   = 17084488,
-            },
-            [5] = {
-                MOBS_START = 17084493, -- scorps 2
-                MOBS_END   = 17084498,
-            },
-            [6] = {
-                MOBS_START = 17084505, -- scorps 3
-                MOBS_END   = 17084508,
-            },
-            [7] = {
-                MOBS_START = 17084511, -- scorps 4
-                MOBS_END   = 17084514,
-            },
-            [8] = {
-                MOBS_START = 17084518, -- scorps 5
+                MOBS_START = 17084511, -- east, southeast large room
                 MOBS_END   = 17084520,
             },
-            [9] = {
-                MOBS_START = 17084521, -- west, trolls and wamoura
+            [5] = {
+                MOBS_START = 17084521, -- west, northern and southern small room
+                MOBS_END   = 17084538,
+            },
+            [6] = {
+                MOBS_START = 17084539, -- west, northwest large room
+                MOBS_END   = 17084550,
+            },
+            [7] = {
+                MOBS_START = 17084551, -- west, southwest large room
                 MOBS_END   = 17084561,
-            },
-            [10] = {
-                MOBS_START = 17084562, -- central rooms, trolls 
-                MOBS_END   = 17084602,
-            },
-            {
-            DORMANT_RAMPART = 17084689, -- spawns reactionary
-            REACTIONARY_RAMPART = 17084692, -- spawns hunting wasps 4700-4704
-            FLUX_FLAN = 17084720,
-            SKIRMISH_PEPHEDRO = 17084705, -- check this number, not in list
             },
         },
         [3] = {
             [1] = {
-                MOBS_START = 17084486, -- trolls and scorps
-                MOBS_END   = 17084520,
+                MOBS_START = 17084603, -- black pudding SE
+                MOBS_END   = 17084609,
             },
+            [2] = {
+                MOBS_START = 17084610, -- black pudding SW
+                MOBS_END   = 17084616,
+            },
+            [3] = {
+                MOBS_START = 17084617, -- black pudding southcentral
+                MOBS_END   = 17084636,
+            },
+            [4] = {
+                MOBS_START = 17084562, -- trolls NW
+                MOBS_END   = 17084568,
+            },
+            [5] = {
+                MOBS_START = 17084569, -- trolls NE
+                MOBS_END   = 17084578,
+            },
+            [6] = {
+                MOBS_START = 17084579, -- trolls north central
+                MOBS_END   = 17084602,
+            },
+            [7] = {
+                MOBS_START = 17084637, -- gears/gear x8 east side
+                MOBS_END   = 17084645,
+            },
+            [8] = {
+                MOBS_START = 17084646, -- gears/gear x8 west side
+                MOBS_END   = 17084654,
+            },
+        },
+        [4] = {
+            [1] = {
+                MOBS_START = 17084655, -- gears, gear, chariot east path
+                MOBS_END   = 17084670,
+            },
+            [2] = {
+                MOBS_START = 17084671, -- gears, gear, chariot west path
+                MOBS_END   = 17084686,
+            },
+        },
+        [5] = {
+                LONG_BOWED_CHARIOT = 17084687,
         },
     },
     npc =
     {
         [1] = {
             [1] = {
-                DOOR0  = 17084889, --  at start, click to open, event 300
+                DOOR1  = 17084889, --  at start, click to open, event 300
             },
             [2] = {
                 ARMOURY_CRATE = 17084722, --starting chest
@@ -143,96 +182,28 @@ zones[tpz.zone.BHAFLAU_REMNANTS] =
                 DOOR_A = 17084891, --  south central door to floor 1 porter
             },
         },
+        [2] = {
+            [1] = {
+                SOCKET = 17084856,
+                SLOT   = 17084857,
+            },
+        },
     },
     crate = 
-    {--[[ first 17084417, last 1708xxxx
-        [1] = {
-            westStatic = {
-                [17088787] = {189.000,12.000,-349.000,255},
-                [17088788] = {171.000,12.000,-349.000,255},
-                [17088789] = {171.000,12.000,-331.000,255},
-                [17088790] = {189.000,12.000,-331.000,255},
-                [17088791] = {211.000,15.500,-251.000,128},
-                [17088792] = {229.000,15.500,-251.000,128},
-                [17088793] = {211.000,15.500,-269.000,128},
-                [17088794] = {229.000,15.500,-269.000,128},
-                [17088795] = {251.000,12.000,-331.000,128},
-                [17088796] = {269.000,12.000,-331.000,128},
-                [17088797] = {251.000,12.000,-349.000,128},
-                [17088798] = {269.000,12.000,-349.000,128},
-                [17088799] = {269.000,15.500,-411.000,194},
-                [17088800] = {251.000,15.500,-411.000,194},
-                [17088801] = {269.000,15.500,-429.000,194},
-                [17088802] = {251.000,15.500,-429.000,194},
-            },
+    {
+        [1] = { -- drop randomly from mobs on all floors
+            RC1     = 17084417,
+            RC2     = 17084418,
+            RC3     = 17084419,
+            RC4     = 17084420,
+            RC5     = 17084421,
+            RC6     = 17084422,
+            RC7     = 17084423,
+            RC8     = 17084424,
+            RC9     = 17084425,
+            RC10    = 17084426,
         },
-        [2] = {
-            nwStatic = {
-                [17088787] = {248.000,-0.500,528.000,222},
-                [17088788] = {248.000,-0.500,552.000,32},
-                [17088789] = {272.000,-0.500,528.000,159},
-                [17088790] = {272.000,-0.500,552.000,94},
-            },
-            seStatic = {
-                [17088791] = {432.000,4.000,288.000,163},
-                [17088792] = {408.000,4.000,288.000,222},
-                [17088793] = {408.000,4.000,312.000,32},
-                [17088794] = {432.000,4.000,312.000,95},
-            },
-        },
-        [3] = {
-            northStatic = {
-                [17088787] = {-352.000,-0.500,-288.000,32},
-                [17088788] = {-352.000,-0.500,-312.000,224},
-                [17088789] = {-328.000,-0.500,-288.000,95},
-                [17088790] = {-328.000,-0.500,-312.000,158},
-            },
-        },
-        [4] = {
-            eastStatic = {
-                [17088787] = {-291.000,0.000,-29.000,160},
-                [17088788] = {-309.000,0.000,-29.000,223},
-                [17088789] = {-291.000,0.000,-11.000,95},
-                [17088790] = {-309.000,0.000,-11.000,32},
-                [17088791] = {-291.000,0.000,229.000,95},
-                [17088792] = {-309.000,0.000,229.000,32},
-                [17088793] = {-291.000,0.000,211.000,160},
-                [17088794] = {-309.000,0.000,211.000,223},
-                [17088795] = {-291.000,-4.000,149.000,95},
-                [17088796] = {-309.000,-4.000,149.000,32},
-                [17088797] = {-291.000,-4.000,131.000,160},
-                [17088798] = {-309.000,-4.000,131.000,223},
-                [17088799] = {-211.000,-4.000,29.000,95},
-                [17088800] = {-229.000,-4.000,29.000,32},
-                [17088801] = {-211.000,-4.000,11.000,160},
-                [17088802] = {-229.000,-4.000,11.000,223},
-            },
-        },
-        [5] = { -- drop randomly from mobs on all floors
-            RC1     = 17088803,
-            RC2     = 17088804,
-            RC3     = 17088805,
-            RC4     = 17088806,
-            RC5     = 17088807,
-            RC6     = 17088808,
-            RC7     = 17088809,
-            RC8     = 17088810,
-            RC9     = 17088811,
-            RC10    = 17088812,
-            RC11    = 17088813,
-            RC12    = 17088814,
-            RC13    = 17088815,
-            RC14    = 17088816,
-            RC15    = 17088817,
-            RC16    = 17088818,
-            RC17    = 17088819,
-            RC18    = 17088820,
-            RC19    = 17088821,
-            RC20    = 17088822,
-        },]]
     },
 }
-
-
 
 return zones[tpz.zone.BHAFLAU_REMNANTS]

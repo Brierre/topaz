@@ -21,6 +21,10 @@ function onEventFinish(entity, eventid, result, door)
     if (eventid == 300 and result == 1) then
         door:setAnimation(8)
         door:untargetable(true)
+        local instance = door:getInstance()
+        for id = ID.mob[2][6].MOBS_START, ID.mob[2][6].MOBS_END do
+            SpawnMob(id, instance)
+        end
         instance:setStage(2)
         instance:setProgress(5)
     end

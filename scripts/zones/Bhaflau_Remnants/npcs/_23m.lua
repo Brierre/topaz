@@ -23,6 +23,9 @@ function onEventFinish(entity, eventid, result, door)
         door:untargetable(true)
         local instance = door:getInstance()
         instance:setStage(4)
-        instance:setProgress(0)
+        instance:setProgress(1)
+        for id = ID.mob[4][2].MOBS_START, ID.mob[4][2].MOBS_END do -- spawn mobs on west path
+            SpawnMob(id, instance)
+        end
     end
 end

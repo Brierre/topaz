@@ -24,5 +24,8 @@ function onEventFinish(entity, eventid, result, door)
         local instance = door:getInstance()
         instance:setStage(2)
         instance:setProgress(3)
+        for id = ID.mob[2][3].MOBS_START, ID.mob[2][3].MOBS_END do
+            SpawnMob(id, instance)
+        end
     end
 end

@@ -23,15 +23,10 @@ function onEventFinish(entity, eventid, result, door)
         door:setAnimation(8)
         door:untargetable(true)
         local instance = door:getInstance()
-        local pos = 1
-        instance:setStage(2)
-        instance:setProgress(5)
-        SpawnMob(ID.mob[2][1].DEADPAN_DEVILET, instance)
-        for k,v in pairs(ID.crate[2].nwStatic) do -- spawn floor 2 crates
-            local npc = instance:getEntity(bit.band(k, 0xFFF), tpz.objType.NPC)
-            npc:setPos(unpack(v))
-            npc:setStatus(tpz.status.NORMAL)
-            salvageUtil.getDrops(npc, instance)
+        for id = ID.mob[2][7].MOBS_START, ID.mob[2][7].MOBS_END do
+            SpawnMob(id, instance)
         end
+        instance:setStage(2)
+        instance:setProgress(6)
     end
 end

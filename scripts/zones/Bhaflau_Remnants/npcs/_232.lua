@@ -24,9 +24,13 @@ function onEventFinish(entity, eventid, result, door)
         local instance = door:getInstance()
         instance:setStage(1)
         instance:setProgress(2)
-        for id = ID.mob[1][3].MOBS_START, ID.mob[1][3].MOBS_END do -- spawn mobs on east side
+        for id = ID.mob[1][5].MOBS_START, ID.mob[1][5].MOBS_END do -- spawn mobs on west side
             SpawnMob(id, instance)
         end
-        SpawnMob(ID.mob[1][2].MAD_BOMBER, instance)
+        if math.random(1,2) == 1 then
+            SpawnMob(ID.mob[1][4].MAD_BOMBER, instance):setPos(259.48,15.498,-289.39,241)
+        else
+            SpawnMob(ID.mob[1][4].MAD_BOMBER, instance):setPos(229.52,16,-460.32,231)
+        end
     end
 end

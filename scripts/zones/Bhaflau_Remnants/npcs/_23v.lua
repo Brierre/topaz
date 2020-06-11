@@ -22,6 +22,6 @@ function onEventFinish(entity, eventid, result, door)
         local instance = door:getInstance()
         door:setAnimation(8)
         door:untargetable(true)
-        SpawnMob(ID.mob[5].LONG_ARMED_CHARIOT, instance)
+        SpawnMob(ID.mob[5].LONG_BOWED_CHARIOT, instance)
     end
 end
