@@ -9,8 +9,6 @@ require("scripts/globals/status")
 function onTrigger(entity, npc)
     if (npc:getInstance():getStage() == 5) and (npc:getInstance():getProgress() == 0) then
         entity:startEvent(300)
-    else
-        entity:messageSpecial(ID.text.DOOR_IS_SEALED)
     end
 end
 
@@ -19,7 +17,6 @@ end
 
 function onEventFinish(entity, eventid, result, door)
     if (eventid == 300 and result == 1) then
-        door:setAnimation(8)
-        --door:untargetable(true)
+        door:setStatus(tpz.status.STATUS_NORMAL)
     end
 end

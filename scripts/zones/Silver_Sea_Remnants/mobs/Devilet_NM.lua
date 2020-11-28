@@ -2,6 +2,7 @@
 -- Area: Silver Sea Remnants
 --  MOB: Devilet
 -----------------------------------
+mixins = {require("scripts/mixins/families/imp")}
 local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
 require("scripts/globals/status")
 require("scripts/globals/settings")
@@ -18,7 +19,7 @@ local path =
 }
 
 function onMobSpawn(mob)
-        mob:addStatusEffectEx(tpz.effect.FLEE)
+        mob:setMod(tpz.mod.MOVE, 100)
         mob:setLocalVar("pathPoint", 1)
         onMobRoam(mob) -- start roam right away
 end
@@ -89,6 +90,23 @@ function onMobDeath(mob, player, isKiller)
                     salvageUtil.getDrops(npc, instance)
                     break
                 end
+            end
+        end
+    end
+end
+
+function onMobDespawn(mob)
+    local instance = mob:getInstance()
+    instance:getEntity(bit.band(ID.npc[3][2].SLOT, 0xFFF), tpz.objType.NPC):setStatus(tpz.status.NORMAL)
+    if math.random(1,10) <= 2 then
+        for k,v in pairs(ID.crate[5]) do
+            local npc = instance:getEntity(bit.band(v, 0xFFF), tpz.objType.NPC)
+            if npc:getStatus() == (tpz.status.DISAPPEAR) then
+                local pos = mob:getPos()
+                npc:setPos(pos.x,pos.y,pos.z,pos.rot)
+                npc:setStatus(tpz.status.NORMAL)
+                salvageUtil.getDrops(npc, instance)
+                break
             end
         end
     end

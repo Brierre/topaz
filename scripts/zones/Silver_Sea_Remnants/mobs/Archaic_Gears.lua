@@ -1,6 +1,7 @@
 -----------------------------------
 -- Area: Silver Sea Remnants
 --  Mob: Archaic Gears
+-- ToDo: Gears in central room East FL4 need to roam more
 -----------------------------------
 local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
 require("scripts/globals/status")

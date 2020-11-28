@@ -43,6 +43,7 @@ INSERT INTO `mob_pool_mods` VALUES (44,368,150,0);
 INSERT INTO `mob_pool_mods` VALUES (60,370,20,0);
 INSERT INTO `mob_pool_mods` VALUES (70,48,434,1);
 INSERT INTO `mob_pool_mods` VALUES (154,163,-70,0);
+INSERT INTO `mob_pool_mods` VALUES (165,10,359,1); -- imps/fomors salvage SSR
 INSERT INTO `mob_pool_mods` VALUES (181,1,6000,1); -- (Antican_Praetor) GIL_MIN
 INSERT INTO `mob_pool_mods` VALUES (181,2,9234,1); -- (Antican_Praetor) GIL_MAX
 INSERT INTO `mob_pool_mods` VALUES (236,30,732,1);
@@ -57,6 +58,7 @@ INSERT INTO `mob_pool_mods` VALUES (268,368,150,0);
 INSERT INTO `mob_pool_mods` VALUES (268,370,50,0);
 INSERT INTO `mob_pool_mods` VALUES (276,12,1,1);
 INSERT INTO `mob_pool_mods` VALUES (289,4,4,1);
+INSERT INTO `mob_pool_mods` VALUES (359,10,165,1); -- fomors/imps salvage SSR
 INSERT INTO `mob_pool_mods` VALUES (370,28,5,1);
 INSERT INTO `mob_pool_mods` VALUES (410,236,20,0);
 INSERT INTO `mob_pool_mods` VALUES (459,23,50,0); -- (Bloodlapper) Attack
@@ -215,6 +217,11 @@ INSERT INTO `mob_pool_mods` VALUES (5409,33,50,1); -- Maat (DRK) SPECIAL_COOLDOW
 INSERT INTO `mob_pool_mods` VALUES (5409,58,40,1); -- Maat (DRK) SPECIAL_DELAY: 40 sec
 INSERT INTO `mob_pool_mods` VALUES (6172,169,-67,0); -- Archaic Gear Train  (Silver Sea Remnants): Movement speed down for patrolling gear(s)
 INSERT INTO `mob_pool_mods` VALUES (6181,169,-25,0); -- Archaic Gears Train (SSR, adding a random pathing to these mobs in center room)
+INSERT INTO `mob_pool_mods` VALUES (6183,11,50,1); -- ATC Salvage special link mechanic
+INSERT INTO `mob_pool_mods` VALUES (6184,11,50,1);
+INSERT INTO `mob_pool_mods` VALUES (6185,11,50,1);
+INSERT INTO `mob_pool_mods` VALUES (6186,11,50,1);
+
 /*!40000 ALTER TABLE `mob_pool_mods` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

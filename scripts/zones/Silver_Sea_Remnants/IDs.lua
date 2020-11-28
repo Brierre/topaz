@@ -37,7 +37,7 @@ zones[tpz.zone.SILVER_SEA_REMNANTS] =
                 MOBS_END   = 17088525,
             },
             [2] = {
-                MOBS_START = 17088526, -- east x8 fomor link like normal fomor
+                MOBS_START = 17088526, -- east x8 fomor
                 MOBS_END   = 17088533,
             },
             [3] = {

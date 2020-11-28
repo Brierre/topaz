@@ -1,6 +1,7 @@
 -----------------------------------
 -- Area: Silver Sea Remnants
 --  Mob: Archaic Rampart NM
+-- ToDo: Set up Citadel Chelonian spawn to be on no aggro for 1 minute
 -----------------------------------
 mixins = {require("scripts/mixins/families/rampart")}
 local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
@@ -9,6 +10,7 @@ require("scripts/globals/status")
 require("scripts/globals/salvage")
 -----------------------------------
 function onMobSpawn(mob)
+    mob:setLocalVar("CitadelTimer", os.time())
 end
 
 function onMobFight(mob,target)

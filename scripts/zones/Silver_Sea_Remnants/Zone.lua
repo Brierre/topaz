@@ -16,9 +16,9 @@ function onInitialize(zone)
     zone:registerRegion(7, -223, -5, -303, -216, -5, -296)  -- map 3 e porter to F4 (-220 -0.5 180) pad #2 e
     zone:registerRegion(8, -342, -5,   97, -336, -5,  103)  -- map 4 porter to F5 (-340 -0.5 660)
     zone:registerRegion(9, -317, -5,  556, -309, -5,  550)  -- map 5 e porter (to whitegate?)
-    zone:registerRegion(10, 345, -0.001, -343, 333, -0.001, -343) -- fomor aggro region floor 1 begin
-    zone:registerRegion(11, 333, -0.001, -416, 346, -0.001, -416) -- fomor aggro region floor 1 end
---[[zone:registerRegion(12, 357, 15, -216,  364, 15, -225)  -- not sure what this is, e door at start
+    zone:registerRegion(10, 330.579, 0, -343.178,  346.965, 0, -332.167)  -- fomor aggro region floor 1 end
+--[[zone:registerRegion(11, 334.057, -0.001, -417.629, 346.627, -0.001, -415.556)
+    zone:registerRegion(12, 357, 15, -216,  364, 15, -225)  -- not sure what this is, e door at start
     zone:registerRegion(13, 322, 15, -224,  314, 15, -213)  -- not sure what this is, w door at start
     zone:registerRegion(14,-337, -5,  -97, -343, -5, -103)  -- not sure what this is, outside of map
     -- SW x,y,z NE x,y,z]]

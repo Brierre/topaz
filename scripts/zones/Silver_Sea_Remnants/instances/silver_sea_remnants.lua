@@ -51,17 +51,23 @@ function onInstanceComplete(instance)
 end
 
 function onRegionEnter(player, region, instance)
-    if region:GetRegionID() <= 11 then
+    if region:GetRegionID() <= 9 then
         player:startEvent(199 + region:GetRegionID())
+    end
+    if region:GetRegionID() == 10 then
+        local instance = player:getInstance()
+        for i = ID.mob[2][6].MOBS_START, ID.mob[2][6].MOBS_END do
+            GetMobByID(i, instance):disengage()
+        end
     end
 end
 
 function onInstanceProgressUpdate(instance, progress, elapsed)
-    if instance:getStage() == 2 and progress == 1 then -- attempt to spawn socket
-        instance:getEntity(bit.band(ID.npc[2][4].SOCKET, 0xFFF), tpz.objType.NPC):setStatus(tpz.status.NORMAL)
-    elseif instance:getStage() == 3 and progress == 1 then -- attempt to spawn slot
-        instance:getEntity(bit.band(ID.npc[3][2].SLOT, 0xFFF), tpz.objType.NPC):setStatus(tpz.status.NORMAL)
-    end
+    --if instance:getStage() == 2 and progress == 1 then -- attempt to spawn socket
+        --instance:getEntity(bit.band(ID.npc[2][4].SOCKET, 0xFFF), tpz.objType.NPC):setStatus(tpz.status.NORMAL)
+    --elseif instance:getStage() == 3 and progress == 1 then -- attempt to spawn slot
+        --instance:getEntity(bit.band(ID.npc[3][2].SLOT, 0xFFF), tpz.objType.NPC):setStatus(tpz.status.NORMAL)
+    --end
 end
 
 function onEventFinish(player, csid, option)

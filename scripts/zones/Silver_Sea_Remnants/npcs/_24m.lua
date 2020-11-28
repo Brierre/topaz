@@ -23,6 +23,6 @@ function onEventFinish(entity, eventid, result, door)
         door:untargetable(true)
         local instance = door:getInstance()
         instance:setStage(4)
-        instance:setProgress(0)
+        instance:setProgress(1)
     end
 end

@@ -9,6 +9,9 @@ require("scripts/globals/status")
 require("scripts/globals/salvage")
 -----------------------------------
 function onMobSpawn(mob)
+    if (mob:getID() == ID.mob[3][7].RAMPART4) then
+        mob:setMobMod(tpz.mobMod.NO_MOVE,1)
+    end
 end
 
 function onMobFight(mob,target)
@@ -64,7 +67,7 @@ function onMobDeath(mob, player, isKiller)
                 instance:setProgress(4) -- may use door after one particular rampart is killed
             end
             
-        elseif (player:getInstance():getStage() == 4) then
+        elseif (player:getInstance():getStage() == 4) and (player:getInstance():getProgress() == 2) then
             local allDeadRamps = false
             if (GetMobByID(ID.mob[4][4].RAMPART1, instance):isDead() and
                 GetMobByID(ID.mob[4][4].RAMPART2, instance):isDead() and

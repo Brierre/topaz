@@ -1,6 +1,8 @@
 -----------------------------------
 -- Area: Silver Sea Remnants
 --  MOB: Ashu Talif Crew
+-- ToDo: Link with imps, group [1][4] all link
+      -- Buff stats for groups [1][4] and [1][2]
 -----------------------------------
 local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
 require("scripts/globals/status")
@@ -8,7 +10,11 @@ require("scripts/globals/settings")
 require("scripts/globals/salvage")
 
 function onMobSpawn(mob)
-
+    local instance = mob:getInstance()
+    for i = ID.mob[2][6].MOBS_START, ID.mob[2][6].MOBS_END do
+        mob:setMobMod(tpz.mobMod.NO_LINK, 1)
+        mob:setMobMod(tpz.mobMod.TP_USE_CHANCE)
+    end
 end
 
 function onMobDeath(mob, player, isKiller)

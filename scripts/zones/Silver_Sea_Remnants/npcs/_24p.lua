@@ -24,7 +24,7 @@ function onEventFinish(entity, eventid, result, door)
         door:untargetable(true)
         local instance = door:getInstance()
         instance:setStage(4)
-        instance:setProgress(0)
+        instance:setProgress(2)
         for k,v in pairs(ID.crate[4].eastStatic) do -- spawn floor 4 crates
             local npc = instance:getEntity(bit.band(k, 0xFFF), tpz.objType.NPC)
             npc:setPos(unpack(v))

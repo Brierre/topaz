@@ -2,6 +2,7 @@
 -- Area: Silver Sea Remnants
 --  MOB: Hammerblow Majanun
 -----------------------------------
+local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
 require("scripts/globals/status")
 require("scripts/globals/settings")
 require("scripts/globals/salvage")
@@ -12,6 +13,7 @@ end
 
 function onMobDeath(mob, player, isKiller)
     if math.random(1,10) <= 2 then
+        local instance = mob:getInstance()
         for k,v in pairs(ID.crate[5]) do
             local npc = instance:getEntity(bit.band(v, 0xFFF), tpz.objType.NPC)
             if npc:getStatus() == (tpz.status.DISAPPEAR) then

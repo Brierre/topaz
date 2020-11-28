@@ -1,6 +1,7 @@
 -----------------------------------
--- Area: Arrapago Remnants
+-- Area: Silver Sea Remnants
 --  Mob: Archaic Gear
+-- ToDo: Set up a patrol for 8 gears on FL3
 -----------------------------------
 local ID = require("scripts/zones/Silver_Sea_Remnants/IDs")
 require("scripts/globals/status")
