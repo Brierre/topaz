@@ -13,7 +13,25 @@ function onMobSpawn(mob)
     local instance = mob:getInstance()
     for i = ID.mob[2][6].MOBS_START, ID.mob[2][6].MOBS_END do
         mob:setMobMod(tpz.mobMod.NO_LINK, 1)
-        mob:setMobMod(tpz.mobMod.TP_USE_CHANCE)
+        mob:setMobMod(tpz.mobMod.TP_USE_CHANCE, 0)
+    end
+end
+
+function onMobFight(mob,target)
+    local WS_LINK_DISTANCE = 15
+    local instance = mob:getInstance()
+--    mob:setLocalVar("NO_WS",0)
+    for imp = ID.mob[2][5].MOBS_START, ID.mob[2][5].MOBS_END do
+
+        if GetMobByID(imp, instance):getCurrentAction() == tpz.act.MOBABILITY_FINISH then -- using? start?
+            if mob:getLocalVar("NO_WS") == 0 then
+                if GetMobByID(imp, instance):checkDistance(mob) < WS_LINK_DISTANCE then
+                    mob:useMobAbility()
+--                    mob:setLocalVar("NO_WS",1) -- somehow need to STOP ATC from spamming WS now. This isn't working
+                end
+            end
+        end
+
     end
 end
 
